@@ -90,6 +90,7 @@ p {
 
 .postImage {
   border-radius: 0%;
+  width: 100px;
 }
 
 /* Footer Styles */
