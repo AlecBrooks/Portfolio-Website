@@ -41,7 +41,7 @@ nav li:not(:last-child) {
 /* Main Content Styles */
 
 main {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px;
 }
