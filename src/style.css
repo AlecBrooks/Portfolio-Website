@@ -106,9 +106,16 @@ ul, li {
   list-style: none;
 }
 
-.blog-posts {
+.post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
 
-  display:flex;
-  justify-content: center;
-  align-items: center;
+.post h2 {
+  margin: 0;
+}
+
+.post p {
+  margin-top: 0.5rem;
 }
