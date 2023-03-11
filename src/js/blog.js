@@ -1,32 +1,28 @@
-const blogPosts = document.getElementById("blogPosts");
-const apiUrl = "https://www.brooksdev.org/src/json/blog-posts.json";
-
-fetch(apiUrl)
+fetch('src/json/blog-posts.json')
   .then(response => response.json())
   .then(data => {
-    const posts = data.blogPosts;
-
-    posts.forEach(post => {
-      const li = document.createElement("li");
-      const title = document.createElement("h2");
-      const date = document.createElement("p");
-      const content = document.createElement("p");
-      const image = document.createElement("img");
-
-      title.textContent = post.title;
-      date.textContent = post.datePublished;
-      content.textContent = post.content;
-      image.src = post.image.url;
-      image.alt = post.image.altText;
-
-      li.appendChild(title);
-      li.appendChild(date);
-      li.appendChild(content);
-      li.appendChild(image);
-
-      if (blogPosts) {
-        blogPosts.appendChild(li);
-      }
+    const blogPosts = data.blogPosts;
+    const blogPostsList = document.getElementById('blog-posts');
+    
+    blogPosts.forEach(post => {
+      const postListItem = document.createElement('li');
+      const postTitle = document.createElement('h2');
+      const postDate = document.createElement('p');
+      const postContent = document.createElement('p');
+      const postImage = document.createElement('img');
+      
+      postTitle.innerText = post.title;
+      postDate.innerText = post.datePublished;
+      postContent.innerText = post.content;
+      postImage.src = post.image.url;
+      postImage.alt = post.image.altText;
+      
+      postListItem.appendChild(postTitle);
+      postListItem.appendChild(postDate);
+      postListItem.appendChild(postContent);
+      postListItem.appendChild(postImage);
+      
+      blogPostsList.appendChild(postListItem);
     });
   })
   .catch(error => console.error(error));
