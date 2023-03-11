@@ -11,6 +11,8 @@ fetch('/src/json/blog-posts.json')
       const postTitle = document.createElement("h2");
       postTitle.innerText = post.title;
 
+      const postTitle = document.createElement("br");
+
       const postDate = document.createElement("p");
       postDate.innerText = new Date(post.datePublished).toLocaleDateString();
 
