@@ -1,4 +1,4 @@
-fetch('/src/json/blog-posts.json')
+fetch('/src/json/blogPosts.json')
   .then(response => response.json())
   .then(data => {
     const ul = document.querySelector('ul');
