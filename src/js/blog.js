@@ -1,4 +1,4 @@
-const blogPostsUrl = "/src/data/blog-posts.json";
+const blogPostsUrl = "/src/json/blog-posts.json";
 
 fetch(blogPostsUrl)
   .then((response) => response.json())
