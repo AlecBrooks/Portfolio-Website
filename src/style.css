@@ -82,6 +82,8 @@ p {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   padding: 10px;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .postsHeader {
@@ -92,23 +94,12 @@ p {
   border-radius: 0%;
   max-width: 50%;
   height: auto;
-  margin-bottom: 20px;
-  float: left;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .postContent {
-  display: flex;
-  flex-direction: column;
-}
-
-.postTitle {
-  margin-top: 0;
-}
-
-.postDate {
-  font-style: italic;
-  margin-top: 0.5rem;
+  flex-grow: 1;
 }
 
 /* Footer Styles */
@@ -127,6 +118,14 @@ ul, li {
 
 .post {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 2rem;
+}
+
+.post h2 {
+  margin: 0;
+}
+
+.post p {
+  margin-top: 0.5rem;
 }
