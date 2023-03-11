@@ -200,8 +200,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #0069d9;
 }
-
-ul {
-  display: flex;
-  justify-content: center;
-}
