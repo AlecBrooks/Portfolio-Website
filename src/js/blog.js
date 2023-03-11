@@ -1,31 +1,36 @@
-const blogPostsUrl = "src/json/blog-posts.json";
-
-fetch(blogPostsUrl)
+fetch("/src/data/blog-posts.json")
   .then(response => response.json())
   .then(data => {
     const blogPosts = data.blogPosts;
-
-    const blogPostsContainer = document.getElementById("blog-posts");
+    const blogList = document.getElementById("blog-posts");
 
     blogPosts.forEach(post => {
-      const postElement = document.createElement("li");
-      postElement.classList.add("posts");
+      const listItem = document.createElement("li");
+      listItem.classList.add("posts");
 
-      const titleElement = document.createElement("h2");
-      titleElement.textContent = post.title;
-      postElement.appendChild(titleElement);
+      const title = document.createElement("h2");
+      title.textContent = post.title;
 
-      const dateElement = document.createElement("p");
-      dateElement.textContent = `Published on ${post.datePublished}`;
-      postElement.appendChild(dateElement);
+      const date = document.createElement("p");
+      const formattedDate = new Date(post.datePublished).toLocaleDateString();
+      date.textContent = `Published on ${formattedDate}`;
 
-      const contentElement = document.createElement("section");
-      const contentParagraph = document.createElement("p");
-      contentParagraph.textContent = post.content;
-      contentElement.appendChild(contentParagraph);
-      postElement.appendChild(contentElement);
+      const contentSection = document.createElement("section");
+      const content = document.createElement("p");
+      content.textContent = post.content;
+      contentSection.appendChild(content);
 
-      blogPostsContainer.appendChild(postElement);
+      const image = document.createElement("img");
+      image.src = post.image.url;
+      image.alt = post.image.altText;
+      image.classList.add("post-image");
+
+      listItem.appendChild(title);
+      listItem.appendChild(date);
+      listItem.appendChild(contentSection);
+      listItem.appendChild(image);
+
+      blogList.appendChild(listItem);
     });
   })
-  .catch(error => console.error(error));
+  .catch(error => console.log(error));
