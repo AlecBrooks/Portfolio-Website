@@ -189,6 +189,8 @@ textarea {
   border-radius: 0.25rem;
   border: 1px solid #ccc;
   resize: none;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 input[type="submit"] {
@@ -198,6 +200,8 @@ input[type="submit"] {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 input[type="submit"]:hover {
