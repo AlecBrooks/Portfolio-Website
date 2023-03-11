@@ -2,37 +2,39 @@ fetch('/src/json/blog-posts.json')
   .then(response => response.json())
   .then(data => {
     const blogPosts = data.blogPosts;
-    const blogPostsElement = document.getElementById('blog-posts');
+    const blogPostList = document.getElementById("blog-post-list");
 
     blogPosts.forEach(post => {
-      const postElement = document.createElement('li');
-      postElement.classList.add('post');
+      const postItem = document.createElement("li");
+      postItem.classList.add("posts");
 
-      const postTitleElement = document.createElement('h2');
-      postTitleElement.innerText = post.title;
+      const postTitle = document.createElement("h2");
+      postTitle.innerText = post.title;
 
-      const postDateElement = document.createElement('p');
-      postDateElement.innerText = `Published on ${new Date(post.datePublished).toLocaleDateString()}`;
+      const postDate = document.createElement("p");
+      postDate.innerText = "Published on " + new Date(post.datePublished).toLocaleDateString();
 
-      const postContentElement = document.createElement('section');
-      const postContentParagraphElement = document.createElement('p');
-      postContentParagraphElement.innerText = post.content;
+      const postImage = document.createElement("img");
+      postImage.classList.add("postImage");
+      postImage.setAttribute("src", post.image.url);
+      postImage.setAttribute("alt", post.image.altText);
 
-      const postImageElement = document.createElement('img');
-      postImageElement.classList.add('postImage');
-      postImageElement.src = post.image.url;
-      postImageElement.alt = post.image.altText;
+      const postContent = document.createElement("section");
+      const paragraphs = post.content.split('\n');
+      paragraphs.forEach(p => {
+        const para = document.createElement("p");
+        para.innerText = p;
+        postContent.appendChild(para);
+      });
 
-      postContentElement.appendChild(postContentParagraphElement);
+      postItem.appendChild(postTitle);
+      postItem.appendChild(postDate);
+      postItem.appendChild(postImage);
+      postItem.appendChild(postContent);
 
-      postElement.appendChild(postTitleElement);
-      postElement.appendChild(postDateElement);
-      postElement.appendChild(postContentElement);
-      postElement.appendChild(postImageElement);
-
-      blogPostsElement.appendChild(postElement);
+      blogPostList.appendChild(postItem);
     });
   })
   .catch(error => {
-    console.error('Error fetching blog posts:', error);
+    console.error('Error:', error);
   });
