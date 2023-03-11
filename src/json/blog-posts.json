@@ -1,31 +1,31 @@
 {
-  "blogPosts": [
-    {
-      "title": "My Blog Post",
-      "datePublished": "2022-01-01",
-      "content": [
-        "This is the first paragraph of my blog post.",
-        "This is the second paragraph.",
-        "And this is the third and final paragraph."
-      ],
-      "image": {
-        "url": "https://example.com/image.jpg",
-        "altText": "A description of the image"
+    "blogPosts": [
+      {
+        "title": "My Blog Post",
+        "datePublished": "2022-01-01",
+        "content": [
+          "This is the first paragraph of my blog post.",
+          "This is the second paragraph.",
+          "And this is the third and final paragraph."
+        ],
+        "image": {
+          "url": "https://i0.wp.com/statisticsbyjim.com/wp-content/uploads/2021/06/bar_chart_clustered.png?fit=576%2C384&ssl=1",
+          "altText": "A description of the image"
+        }
+      },
+      {
+        "title": "Another Blog Post",
+        "datePublished": "2022-02-01",
+        "content": [
+          "This is the first paragraph of another blog post.",
+          "This post has more paragraphs than the first one.",
+          "So here's another paragraph.",
+          "And one more for good measure."
+        ],
+        "image": {
+          "url": "https://i0.wp.com/statisticsbyjim.com/wp-content/uploads/2021/06/bar_chart_clustered.png?fit=576%2C384&ssl=1",
+          "altText": "Another description of an image"
+        }
       }
-    },
-    {
-      "title": "Another Blog Post",
-      "datePublished": "2022-02-01",
-      "content": [
-        "This is the first paragraph of another blog post.",
-        "This post has more paragraphs than the first one.",
-        "So here's another paragraph.",
-        "And one more for good measure."
-      ],
-      "image": {
-        "url": "https://example.com/another-image.jpg",
-        "altText": "Another description of an image"
-      }
-    }
-  ]
+    ]
 }
