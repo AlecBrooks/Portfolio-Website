@@ -1,42 +1,37 @@
-const blogPostsUrl = "/src/json/blog-posts.json";
-
-fetch(blogPostsUrl)
-  .then((response) => response.json())
-  .then((data) => {
+fetch('/src/json/blog-posts.json')
+  .then(response => response.json())
+  .then(data => {
     const blogPosts = data.blogPosts;
+    const blogPostsElement = document.getElementById('blog-posts');
 
-    blogPosts.forEach((post) => {
-      const blogPostList = document.getElementById("blog-posts");
+    blogPosts.forEach(post => {
+      const postElement = document.createElement('li');
+      postElement.classList.add('post');
 
-      const blogPost = document.createElement("li");
-      blogPost.classList.add("posts");
+      const postTitleElement = document.createElement('h2');
+      postTitleElement.innerText = post.title;
 
-      const blogPostTitle = document.createElement("h2");
-      const titleText = document.createTextNode(post.title);
-      blogPostTitle.appendChild(titleText);
+      const postDateElement = document.createElement('p');
+      postDateElement.innerText = `Published on ${new Date(post.datePublished).toLocaleDateString()}`;
 
-      const blogPostDate = document.createElement("p");
-      const datePublished = new Date(post.datePublished).toLocaleDateString();
-      const dateText = document.createTextNode("Published on " + datePublished);
-      blogPostDate.appendChild(dateText);
+      const postContentElement = document.createElement('section');
+      const postContentParagraphElement = document.createElement('p');
+      postContentParagraphElement.innerText = post.content;
+      postContentElement.appendChild(postContentParagraphElement);
 
-      const blogPostImage = document.createElement("img");
-      blogPostImage.src = post.image.url;
-      blogPostImage.alt = post.image.altText;
-      blogPostImage.style.display = "block";
-      blogPostImage.style.margin = "auto";
-      blogPostImage.style.width = "50%";
+      const postImageElement = document.createElement('img');
+      postImageElement.classList.add('postImage');
+      postImageElement.src = post.image.url;
+      postImageElement.alt = post.image.altText;
 
-      const blogPostContent = document.createElement("section");
-      const contentText = document.createTextNode(post.content);
-      blogPostContent.appendChild(contentText);
+      postElement.appendChild(postTitleElement);
+      postElement.appendChild(postDateElement);
+      postElement.appendChild(postContentElement);
+      postElement.appendChild(postImageElement);
 
-      blogPost.appendChild(blogPostTitle);
-      blogPost.appendChild(blogPostDate);
-      blogPost.appendChild(blogPostImage);
-      blogPost.appendChild(blogPostContent);
-
-      blogPostList.appendChild(blogPost);
+      blogPostsElement.appendChild(postElement);
     });
   })
-  .catch((error) => console.error("Error loading blog posts", error));
+  .catch(error => {
+    console.error('Error fetching blog posts:', error);
+  });
