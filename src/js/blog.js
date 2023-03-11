@@ -1,35 +1,32 @@
-fetch('/src/json/blog-posts.json')
+const blogPosts = document.getElementById("blogPosts");
+const apiUrl = "https://www.brooksdev.org/src/json/blog-posts.json";
+
+fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
-    const blogPosts = data.blogPosts;
-    const blogPostsContainer = document.getElementById('blog-posts-container');
+    const posts = data.blogPosts;
 
-    blogPosts.forEach(post => {
-      const postItem = document.createElement('li');
-      postItem.classList.add('post-item');
+    posts.forEach(post => {
+      const li = document.createElement("li");
+      const title = document.createElement("h2");
+      const date = document.createElement("p");
+      const content = document.createElement("p");
+      const image = document.createElement("img");
 
-      const postTitle = document.createElement('h2');
-      postTitle.classList.add('post-title');
-      postTitle.textContent = post.title;
+      title.textContent = post.title;
+      date.textContent = post.datePublished;
+      content.textContent = post.content;
+      image.src = post.image.url;
+      image.alt = post.image.altText;
 
-      const postDate = document.createElement('p');
-      postDate.classList.add('post-date');
-      postDate.textContent = post.datePublished;
+      li.appendChild(title);
+      li.appendChild(date);
+      li.appendChild(content);
+      li.appendChild(image);
 
-      const postContent = document.createElement('p');
-      postContent.classList.add('post-content');
-      postContent.textContent = post.content;
-
-      const postImage = document.createElement('img');
-      postImage.classList.add('post-image');
-      postImage.src = post.image.url;
-      postImage.alt = post.image.altText;
-
-      postItem.appendChild(postTitle);
-      postItem.appendChild(postDate);
-      postItem.appendChild(postContent);
-      postItem.appendChild(postImage);
-      blogPostsContainer.appendChild(postItem);
+      if (blogPosts) {
+        blogPosts.appendChild(li);
+      }
     });
   })
   .catch(error => console.error(error));
