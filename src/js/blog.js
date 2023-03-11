@@ -1,7 +1,7 @@
-fetch('/src/json/blogPosts.json')
+fetch('blog-posts.json')
   .then(response => response.json())
   .then(data => {
-    const ul = document.querySelector('ul');
+    const ul = document.getElementById('blog-posts');
     data.blogPosts.forEach(post => {
       const li = document.createElement('li');
       const a = document.createElement('a');
