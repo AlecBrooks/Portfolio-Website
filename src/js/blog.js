@@ -17,12 +17,13 @@ fetch('/src/json/blog-posts.json')
       const postContentElement = document.createElement('section');
       const postContentParagraphElement = document.createElement('p');
       postContentParagraphElement.innerText = post.content;
-      postContentElement.appendChild(postContentParagraphElement);
 
       const postImageElement = document.createElement('img');
       postImageElement.classList.add('postImage');
       postImageElement.src = post.image.url;
       postImageElement.alt = post.image.altText;
+
+      postContentElement.appendChild(postContentParagraphElement);
 
       postElement.appendChild(postTitleElement);
       postElement.appendChild(postDateElement);
