@@ -14,11 +14,6 @@ fetch('/src/json/blog-posts.json')
       const postDate = document.createElement("p");
       postDate.innerText = "Published on " + new Date(post.datePublished).toLocaleDateString();
 
-      const postImage = document.createElement("img");
-      postImage.classList.add("postImage");
-      postImage.setAttribute("src", post.image.url);
-      postImage.setAttribute("alt", post.image.altText);
-
       const postContent = document.createElement("section");
       post.content.forEach(p => {
         const para = document.createElement("p");
@@ -26,10 +21,15 @@ fetch('/src/json/blog-posts.json')
         postContent.appendChild(para);
       });
 
+      const postImage = document.createElement("img");
+      postImage.classList.add("postImage");
+      postImage.setAttribute("src", post.image.url);
+      postImage.setAttribute("alt", post.image.altText);
+
       postItem.appendChild(postTitle);
       postItem.appendChild(postDate);
-      postItem.appendChild(postImage);
       postItem.appendChild(postContent);
+      postItem.appendChild(postImage);
 
       blogPostList.appendChild(postItem);
     });
