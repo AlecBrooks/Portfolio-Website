@@ -2,39 +2,29 @@ fetch('/src/json/blog-posts.json')
   .then(response => response.json())
   .then(data => {
     const blogPosts = data.blogPosts;
-    const blogPostList = document.getElementById("blog-post-list");
+    const blogList = document.querySelector('#blogList');
 
     blogPosts.forEach(post => {
-      const postItem = document.createElement("li");
-      postItem.classList.add("posts");
-
-      const postTitle = document.createElement("h2");
-      postTitle.innerText = post.title;
-
-      const postDate = document.createElement("p");
-      postDate.innerText = "Published on " + new Date(post.datePublished).toLocaleDateString();
-
-      const postImage = document.createElement("img");
-      postImage.classList.add("postImage");
-      postImage.setAttribute("src", post.image.url);
-      postImage.setAttribute("alt", post.image.altText);
-
-      const postContent = document.createElement("section");
-      const paragraphs = post.content.split('\n');
-      paragraphs.forEach(p => {
-        const para = document.createElement("p");
-        para.innerText = p;
-        postContent.appendChild(para);
-      });
-
-      postItem.appendChild(postTitle);
-      postItem.appendChild(postDate);
-      postItem.appendChild(postImage);
-      postItem.appendChild(postContent);
-
-      blogPostList.appendChild(postItem);
+      const postElement = document.createElement('li');
+      postElement.classList.add('posts');
+      postElement.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>Published on ${post.datePublished}</p>
+        <section>${createParagraphs(post.content)}</section>
+        <img class="postImage" src="${post.image.url}" alt="${post.image.altText}">
+      `;
+      blogList.appendChild(postElement);
     });
-  })
-  .catch(error => {
-    console.error('Error:', error);
   });
+
+function createParagraphs(content) {
+  if (typeof content !== 'string') {
+    return '';
+  }
+
+  const paragraphs = content.split('\n').map(paragraph => {
+    return `<p>${paragraph.trim()}</p>`;
+  });
+
+  return paragraphs.join('');
+}
