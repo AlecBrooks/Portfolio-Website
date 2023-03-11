@@ -20,10 +20,10 @@ fetch('/src/json/blog-posts.json')
       postImage.setAttribute("alt", post.image.altText);
 
       const postContent = document.createElement("section");
-      const paragraphs = post.content.split('\n\n');
+      const paragraphs = post.content.toString().split('\n\n');
       paragraphs.forEach(p => {
         const para = document.createElement("p");
-        para.innerText = p;
+        para.innerText = p.trim();
         postContent.appendChild(para);
       });
 
