@@ -39,7 +39,6 @@ nav li:not(:last-child) {
 }
 
 /* Main Content Styles */
-
 main {
   max-width: 1500px;
   margin: 0 auto;
@@ -153,34 +152,5 @@ ul, li {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.post-content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.post-title {
-  font-size: 2em;
-  margin: 0 0 10px;
-}
-
-.post-date {
-  font-size: 1.2em;
-  margin: 0 0 10px;
-}
-
-.post-text {
-  display: flex;
-  flex-direction: row;
-}
-
-.post-image {
-  border-radius: 5px;
-  max-width: 50%;
-  height: auto;
-  margin-right: 20px;
-  object-fit: cover;
+overflow: hidden;
 }
