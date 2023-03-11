@@ -1,4 +1,4 @@
-fetch('blog-posts.json')
+fetch('src/json/blog-posts.json')
   .then(response => response.json())
   .then(data => {
     const ul = document.getElementById('blog-posts');
