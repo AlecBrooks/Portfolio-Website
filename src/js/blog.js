@@ -23,7 +23,7 @@ fetch('/src/json/blog-posts.json')
       const paragraphs = post.content.split('\n\n');
       paragraphs.forEach(p => {
         const para = document.createElement("p");
-        para.innerText = p.replace(/\n/g, ' ');
+        para.innerText = p;
         postContent.appendChild(para);
       });
 
@@ -38,4 +38,3 @@ fetch('/src/json/blog-posts.json')
   .catch(error => {
     console.error('Error:', error);
   });
-
