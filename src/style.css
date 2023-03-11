@@ -105,3 +105,10 @@ footer {
 ul, li {
   list-style: none;
 }
+
+.blog-posts {
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
