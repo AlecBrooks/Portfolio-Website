@@ -1,36 +1,42 @@
-fetch("/src/data/blog-posts.json")
-  .then(response => response.json())
-  .then(data => {
+const blogPostsUrl = "/src/data/blog-posts.json";
+
+fetch(blogPostsUrl)
+  .then((response) => response.json())
+  .then((data) => {
     const blogPosts = data.blogPosts;
-    const blogList = document.getElementById("blog-posts");
 
-    blogPosts.forEach(post => {
-      const listItem = document.createElement("li");
-      listItem.classList.add("posts");
+    blogPosts.forEach((post) => {
+      const blogPostList = document.getElementById("blog-posts");
 
-      const title = document.createElement("h2");
-      title.textContent = post.title;
+      const blogPost = document.createElement("li");
+      blogPost.classList.add("posts");
 
-      const date = document.createElement("p");
-      const formattedDate = new Date(post.datePublished).toLocaleDateString();
-      date.textContent = `Published on ${formattedDate}`;
+      const blogPostTitle = document.createElement("h2");
+      const titleText = document.createTextNode(post.title);
+      blogPostTitle.appendChild(titleText);
 
-      const contentSection = document.createElement("section");
-      const content = document.createElement("p");
-      content.textContent = post.content;
-      contentSection.appendChild(content);
+      const blogPostDate = document.createElement("p");
+      const datePublished = new Date(post.datePublished).toLocaleDateString();
+      const dateText = document.createTextNode("Published on " + datePublished);
+      blogPostDate.appendChild(dateText);
 
-      const image = document.createElement("img");
-      image.src = post.image.url;
-      image.alt = post.image.altText;
-      image.classList.add("post-image");
+      const blogPostImage = document.createElement("img");
+      blogPostImage.src = post.image.url;
+      blogPostImage.alt = post.image.altText;
+      blogPostImage.style.display = "block";
+      blogPostImage.style.margin = "auto";
+      blogPostImage.style.width = "50%";
 
-      listItem.appendChild(title);
-      listItem.appendChild(date);
-      listItem.appendChild(contentSection);
-      listItem.appendChild(image);
+      const blogPostContent = document.createElement("section");
+      const contentText = document.createTextNode(post.content);
+      blogPostContent.appendChild(contentText);
 
-      blogList.appendChild(listItem);
+      blogPost.appendChild(blogPostTitle);
+      blogPost.appendChild(blogPostDate);
+      blogPost.appendChild(blogPostImage);
+      blogPost.appendChild(blogPostContent);
+
+      blogPostList.appendChild(blogPost);
     });
   })
-  .catch(error => console.log(error));
+  .catch((error) => console.error("Error loading blog posts", error));
