@@ -186,6 +186,8 @@ textarea {
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid #ccc;
+  resize: none;
+  font-size: 16px;
 }
 
 input[type="submit"] {
@@ -204,8 +206,4 @@ input[type="submit"]:hover {
 .ContactUl{
   display: flex;
   justify-content: center;
-}
-
-textarea {
-  resize: none;
 }
