@@ -12,7 +12,7 @@ fetch('/src/json/blog-posts.json')
       postTitle.innerText = post.title;
 
       const postDate = document.createElement("p");
-      postDate.innerText = "Published on " + new Date(post.datePublished).toLocaleDateString();
+      postDate.innerText = new Date(post.datePublished).toLocaleDateString();
 
       const postContent = document.createElement("section");
       post.content.forEach(p => {
@@ -26,10 +26,14 @@ fetch('/src/json/blog-posts.json')
       postImage.setAttribute("src", post.image.url);
       postImage.setAttribute("alt", post.image.altText);
 
-      postItem.appendChild(postTitle);
-      postItem.appendChild(postDate);
-      postItem.appendChild(postContent);
+      const postDetails = document.createElement("div");
+      postDetails.classList.add("postDetails");
+      postDetails.appendChild(postTitle);
+      postDetails.appendChild(postDate);
+
       postItem.appendChild(postImage);
+      postItem.appendChild(postDetails);
+      postItem.appendChild(postContent);
 
       blogPostList.appendChild(postItem);
     });
