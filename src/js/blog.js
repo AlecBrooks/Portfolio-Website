@@ -4,11 +4,6 @@ fetch('/src/json/blog-posts.json')
     const blogPosts = data.blogPosts;
     const blogPostList = document.getElementById("blog-post-list");
 
-    if (!blogPostList) {
-      console.error('Error: Could not find element with id "blog-post-list"');
-      return;
-    }
-
     blogPosts.forEach(post => {
       const postItem = document.createElement("li");
       postItem.classList.add("posts");
@@ -25,12 +20,18 @@ fetch('/src/json/blog-posts.json')
       postImage.setAttribute("alt", post.image.altText);
 
       const postContent = document.createElement("section");
-      const paragraphs = post.content.split('\n');
-      paragraphs.forEach(p => {
+      if (typeof post.content === 'string') {
+        const paragraphs = post.content.split('\n');
+        paragraphs.forEach(p => {
+          const para = document.createElement("p");
+          para.innerText = p;
+          postContent.appendChild(para);
+        });
+      } else {
         const para = document.createElement("p");
-        para.innerText = p;
+        para.innerText = post.content;
         postContent.appendChild(para);
-      });
+      }
 
       postItem.appendChild(postTitle);
       postItem.appendChild(postDate);
