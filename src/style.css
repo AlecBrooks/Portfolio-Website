@@ -189,7 +189,7 @@ textarea {
 }
 
 input[type="submit"] {
-  color: #00B7C2;
+  background-color: #00B7C2;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
