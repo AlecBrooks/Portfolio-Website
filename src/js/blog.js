@@ -21,7 +21,7 @@ fetch('/src/json/blog-posts.json')
 
       const postContent = document.createElement("section");
       if (typeof post.content === 'string') {
-        const paragraphs = post.content.split('\n');
+        const paragraphs = post.content.split('\n\n');
         paragraphs.forEach(p => {
           const para = document.createElement("p");
           para.innerText = p;
