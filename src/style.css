@@ -263,7 +263,7 @@ input[type="submit"]:hover {
   width: 100%;
   height: auto;
   border-radius: 0%;
-  max-height: 400px;
+  max-height: 100%;
 }
 
 
