@@ -215,7 +215,7 @@ input[type="submit"]:hover {
 
 .alert-success{
   z-index: 1;
-  background-color: #D4edda;
+  background-color: #00B7C2;
   font-size: 14px;
   font-weight: 700;
   padding: 20px 40px;
@@ -233,15 +233,4 @@ input[type="submit"]:hover {
   width: 100%;
   border-left: 3px solid #ffa502;
   border-radius: 4px;
-}
-
-.sendStatus {
-    z-index: 1;
-    background-color: #fff3cd;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 20px 40px;
-    width: 100%;
-    border-left: 3px solid #ffa502;
-    border-radius: 4px;
 }
