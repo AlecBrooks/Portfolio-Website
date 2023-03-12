@@ -57,6 +57,10 @@ p {
   margin-bottom: 10px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .posts {
   margin: 20px;
   padding: 20px;
