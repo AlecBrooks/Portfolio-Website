@@ -1,4 +1,4 @@
-<?php include 'PHPMailer/process_form.php'>
+<?php include 'PHPMailer/process_form.php'?>
 <!DOCTYPE html>
 <html>
 <head>
