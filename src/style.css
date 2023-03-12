@@ -51,18 +51,18 @@ h1 {
   margin-bottom: 20px;
 }
 
-.profileImage {
-  max-width: 200px;
-  border-radius: 50%;
-  margin-right: 40px;
-  float: left;
-}
-
 p {
   font-size: 16px;
   line-height: 1.5;
   color: #555555;
   margin-bottom: 20px;
+}
+
+.profileImage {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 40px;
+  float: left;
 }
 
 .image-links {
@@ -72,7 +72,7 @@ p {
   float: right;
 }
 
-.image-links img {
+.image-links {
   width: 30px;
   height: 30px;
 }
