@@ -1,3 +1,4 @@
+<?php include "PHPMailer/process_form.php">
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
 				<li><a href="index.html">Intro</a></li>
 				<li><a href="portfolio.html">Data Analysis Projects</a></li>
 				<li><a href="blog.html">Programing Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -23,10 +24,13 @@
 	<main>
         <ul class="ContactUl">
             <li class="contactmeBox">
-		        <form action="process_form.php" method="post">
+		        <form action="PHPMailer/process_form.php" method="post">
+					
+					<label for="name">Name</label>
+                    <input type="text" id="name" name="name" required><br>
 
-                    <label for="from">Email</label>
-                    <input type="from" id="from" name="from" required><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required><br>
 
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" required><br>
