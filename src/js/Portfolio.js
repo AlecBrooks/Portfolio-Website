@@ -1,4 +1,4 @@
-fetch('/src/json/blog-posts.json')
+fetch('/src/json/portfolio-posts.json')
   .then(response => response.json())
   .then(data => {
     const blogPosts = data.blogPosts;
