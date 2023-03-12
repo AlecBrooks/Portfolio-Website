@@ -64,6 +64,24 @@ p {
   background-color: #f7f7f7;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-column {
+  flex-basis: 50%;
+}
+
+.right-column {
+  flex-basis: 40%;
+}
+
+div.posts img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0%;
 }
 
 /*introPage*/
