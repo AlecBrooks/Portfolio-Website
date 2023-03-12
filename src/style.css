@@ -61,7 +61,7 @@ h1 {
   text-align: center;
 }
 
-.posts {
+.post {
   margin: 15px;
   padding: 15px;
   background-color: #f7f7f7;
@@ -95,6 +95,8 @@ main.introPage img {
   border-radius: 50%;
   margin-right: 40px;
   float: left;
+  margin: 10px;
+  padding: 10px;
 }
 
 div.socialLinks img{
