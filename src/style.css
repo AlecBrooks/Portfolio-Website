@@ -59,7 +59,7 @@ p {
 }
 
 /*introPage*/
-div.introPage img {
+main.introPage img {
   max-width: 200px;
   border-radius: 50%;
   margin-right: 40px;
