@@ -212,3 +212,25 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
 }
+
+.alert-success{
+  z-index: 1;
+  background-color: #D4edda;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 40px;
+  width: 100%;
+  border-left: 3px solid #3ad66e;
+  border-radius: 4px;
+}
+
+.alert-error{
+  z-index: 1;
+  background-color: ##fff3cd;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 40px;
+  width: 100%;
+  border-left: 3px solid #ffa502;
+  border-radius: 4px;
+}
