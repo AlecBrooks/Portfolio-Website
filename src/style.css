@@ -51,7 +51,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-img {
+.profileImage {
   max-width: 200px;
   border-radius: 50%;
   margin-right: 40px;
@@ -262,4 +262,5 @@ input[type="submit"]:hover {
 .blogimage {
   width: 100%;
   height: auto;
+  border-radius: 0%;
 }
