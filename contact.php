@@ -41,7 +41,7 @@
     </main>
     <!-- Footer -->
     <footer>
-        <div>Alec@brooksdev.org<br></br>
-        powered by notepad.exe
-        </div>
-        <p>&copy; 2023 Alec Brooks. All rights
+		Alec@brooksdev.org<br></br>
+		powered by notepad.exe
+		<p>&copy; 2023 Alec Brooks. All rights reserved.</p>
+	</footer>
