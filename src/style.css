@@ -144,7 +144,7 @@ ul, li {
 
 .posts section {
   margin: 0;
-  padding: 50
+  padding: 50;
   flex: 1;
 }
 
@@ -226,11 +226,22 @@ input[type="submit"]:hover {
 
 .alert-error{
   z-index: 1;
-  background-color: ##fff3cd;
+  background-color: #fff3cd;
   font-size: 14px;
   font-weight: 700;
   padding: 20px 40px;
   width: 100%;
   border-left: 3px solid #ffa502;
   border-radius: 4px;
+}
+
+.sendStatus {
+    z-index: 1;
+    background-color: #fff3cd;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 40px;
+    width: 100%;
+    border-left: 3px solid #ffa502;
+    border-radius: 4px;
 }
