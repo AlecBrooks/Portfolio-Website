@@ -26,9 +26,6 @@ fetch('/src/json/blog-posts.json')
       postImage.setAttribute("src", post.image.url);
       postImage.setAttribute("alt", post.image.altText);
 
-      postDetails.appendChild(postTitle);
-      postDetails.appendChild(postDate);
-
       const postDetails = document.createElement("div");
       postDetails.classList.add("postDetails");
       postDetails.appendChild(postTitle);
