@@ -215,12 +215,12 @@ input[type="submit"]:hover {
 
 .alert-success{
   z-index: 1;
-  background-color: #00B7C2;
+  background-color: #00b8c25e;
   font-size: 14px;
   font-weight: 700;
   padding: 20px 40px;
   width: 100%;
-  border-left: 3px solid #3ad66e;
+  border-left: 3px solid #00B7C2;
   border-radius: 4px;
 }
 
