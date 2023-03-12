@@ -37,3 +37,10 @@ nav li {
 nav li:not(:last-child) {
   margin-right: 20px;
 }
+
+/* shared Content Styles */
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px;
+}
