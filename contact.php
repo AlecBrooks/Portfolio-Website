@@ -22,6 +22,7 @@
     </header>
     <!-- Main Content -->
     <main class = "contactmeBox">
+        <h1>Contact Me</h1>
         <ul>
             <li class="post">
                 <form  method="POST">
