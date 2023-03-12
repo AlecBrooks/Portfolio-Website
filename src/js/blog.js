@@ -34,8 +34,8 @@ fetch('/src/json/blog-posts.json')
       postImage.setAttribute("src", post.image.url);
       postImage.setAttribute("alt", post.image.altText);
 
-      postItem.appendChild(postImage);
       postItem.appendChild(postContent);
+      postItem.appendChild(postImage); // move postImage to the end
       blogPostList.appendChild(postItem);
     });
   })
