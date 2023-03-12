@@ -222,6 +222,7 @@ input[type="submit"]:hover {
   width: 60%;
   border-left: 3px solid #3ad66e;
   border-radius: 4px;
+  text-align: center;
 }
 
 .alert-error{
@@ -233,4 +234,5 @@ input[type="submit"]:hover {
   width: 60%;
   border-left: 3px solid #ffa502;
   border-radius: 4px;
+  text-align: center;
 }
