@@ -89,6 +89,8 @@ main.introPage img {
   border-radius: 50%;
   margin-right: 40px;
   float: left;
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
 }
 
 div.socialLinks img{
