@@ -31,8 +31,8 @@ fetch('/src/json/blog-posts.json')
       postDetails.appendChild(postTitle);
       postDetails.appendChild(postDate);
 
+      postContent.appendChild(postDetails); // move postDetails inside postContent
       postItem.appendChild(postImage);
-      postItem.appendChild(postDetails);
       postItem.appendChild(postContent);
 
       blogPostList.appendChild(postItem);
