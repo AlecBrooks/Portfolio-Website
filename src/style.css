@@ -260,10 +260,9 @@ input[type="submit"]:hover {
 }
 
 .blogimage {
-  width: 1000px;
+  width: auto;
   height: auto;
   border-radius: 0%;
-  height: 1000px;
 }
 
 
