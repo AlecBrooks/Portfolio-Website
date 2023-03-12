@@ -219,7 +219,7 @@ input[type="submit"]:hover {
   font-size: 14px;
   font-weight: 700;
   padding: 20px 40px;
-  width: 100%;
+  width: 60%;
   border-left: 3px solid #3ad66e;
   border-radius: 4px;
 }
@@ -230,7 +230,7 @@ input[type="submit"]:hover {
   font-size: 14px;
   font-weight: 700;
   padding: 20px 40px;
-  width: 100%;
+  width: 60%;
   border-left: 3px solid #ffa502;
   border-radius: 4px;
 }
