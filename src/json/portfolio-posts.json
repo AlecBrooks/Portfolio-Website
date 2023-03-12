@@ -31,6 +31,18 @@
           "url": "https://i0.wp.com/statisticsbyjim.com/wp-content/uploads/2021/06/bar_chart_clustered.png?fit=576%2C384&ssl=1",
           "altText": "Another description of an image"
         }
+      },
+      {
+        "title": "Test",
+        "datePublished": "3-12-2023",
+        "content": [
+          "This is a paragraph","this is a paragraph 2"
+        ],
+          "image": 
+          {
+          "url": "https://i0.wp.com/statisticsbyjim.com/wp-content/uploads/2021/06/bar_chart_clustered.png?fit=576%2C384&ssl=1",
+          "altText": "nul"
+          }
       }
     ]
 }
