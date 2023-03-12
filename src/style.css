@@ -79,9 +79,10 @@ p {
 }
 
 div.posts img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0%;
+  margin: 10px;
 }
 
 /*introPage*/
