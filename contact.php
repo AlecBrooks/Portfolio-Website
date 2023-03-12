@@ -40,7 +40,7 @@
 
                     <input type="submit" name="submit" value="Submit">
 
-                    <div class="sendStatus"><?php echo $alert; ?></div>
+                    <?php echo $alert; ?>
 
                 </form>
             </li>
