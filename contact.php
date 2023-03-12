@@ -21,9 +21,10 @@
         </nav>
     </header>
     <!-- Main Content -->
-    <main>
+    <main class = "contactmeBox">
+
         <ul class="ContactUl">
-            <li class="contactmeBox">
+            <li class="post">
                 <form action="" method="post">
 
                     <label for="name">Name</label>
