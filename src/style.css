@@ -72,3 +72,26 @@ div.socialLinks img{
   width: 30px;
   height: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer Style*/
+footer {
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+}
