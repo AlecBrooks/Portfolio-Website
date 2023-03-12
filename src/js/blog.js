@@ -31,8 +31,8 @@ fetch('/src/json/blog-posts.json')
 
       const postDetails = document.createElement("div");
       postDetails.classList.add("postDetails");
-      //postDetails.appendChild(postTitle);
-      //postDetails.appendChild(postDate);
+      postDetails.appendChild(postTitle);
+      postDetails.appendChild(postDate);
 
       postItem.appendChild(postImage);
       postItem.appendChild(postDetails);
