@@ -33,10 +33,10 @@ if(isset($_POST['submit'])){
         $mail->Body = "Name: $name<br>Email: $email<br>Subject: $subject<br>$message";
 
         $mail->send();
-        $alert = "<div class='alert-success'></div><span>Message Sent!</span>";
+        $alert = "<div class='alert-success'><span>Message Sent!</span></div>";
 
     } catch(Exception $e){
-        $alert = "<div class='alert-danger'></div><span>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</span>";
+        $alert = "<div class='alert-danger'><span>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</span></div>";
     }
 }
 ?>
