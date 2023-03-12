@@ -1,4 +1,4 @@
-<?php include "PHPMailer/process_form.php">
+<?php include 'PHPMailer/process_form.php'>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,6 +39,9 @@
                     <textarea id="message" name="message" rows="15" cols="70"></textarea></textarea><br>
 
                     <input type="submit" value="Submit">
+
+					<div class="sendStatus"><?php $alert; ?></div>
+
                 </form>
             </li>
         </ul>
