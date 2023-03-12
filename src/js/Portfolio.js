@@ -1,4 +1,4 @@
-fetch('/src/json/portfolio-posts.json')
+fetch('/src/json/blog-posts.json')
   .then(response => response.json())
   .then(data => {
     const blogPosts = data.blogPosts;
@@ -6,7 +6,10 @@ fetch('/src/json/portfolio-posts.json')
 
     blogPosts.forEach(post => {
       const postItem = document.createElement("li");
-      postItem.classList.add("posts");
+      postItem.classList.add("post");
+
+      const leftColumn = document.createElement("div");
+      leftColumn.classList.add("left-column");
 
       const postTitle = document.createElement("h2");
       postTitle.innerText = post.title;
@@ -14,14 +17,7 @@ fetch('/src/json/portfolio-posts.json')
       const postDate = document.createElement("p");
       postDate.innerText = new Date(post.datePublished).toLocaleDateString();
 
-      const postContent = document.createElement("section");
-
-      const postDetails = document.createElement("div");
-      postDetails.classList.add("postDetails");
-      postDetails.appendChild(postTitle);
-      postDetails.appendChild(postDate);
-      
-      postContent.appendChild(postDetails); // move postDetails to the top
+      const postContent = document.createElement("div");
 
       post.content.forEach(p => {
         const para = document.createElement("p");
@@ -29,13 +25,19 @@ fetch('/src/json/portfolio-posts.json')
         postContent.appendChild(para);
       });
 
+      leftColumn.appendChild(postTitle);
+      leftColumn.appendChild(postDate);
+      leftColumn.appendChild(postContent);
+
+      postItem.appendChild(leftColumn);
+
       const postImage = document.createElement("img");
       postImage.classList.add("postImage");
       postImage.setAttribute("src", post.image.url);
       postImage.setAttribute("alt", post.image.altText);
 
-      postItem.appendChild(postContent);
-      postItem.appendChild(postImage); // move postImage to the end
+      postItem.appendChild(postImage);
+
       blogPostList.appendChild(postItem);
     });
   })
