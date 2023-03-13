@@ -35,26 +35,6 @@ nav li:not(:last-child) {
   margin-right: 20px;
 }
 
-.Navbtn {
-  border: 2px solid #8FC1E3;
-  background: none;
-  padding: 5px 10px;
-  font-size: 15px;
-  margin: 5px;
-  color: #8FC1E3;
-  font-weight: bold;
-}
-
-.Navbtn:hover{
-  color: #7da8c5;
-}
-
-.Navbtn::before{
-background: #8FC1E3;
-z-index: -1;
-transition: 0.8s;
-}
-
 /* shared Content Styles */
 main {
   max-width: 1500px;
@@ -233,4 +213,26 @@ input[type="submit"]:hover {
 
   padding-top: 20px;
   padding-bottom: 0px;
+}
+
+
+
+.Navbtn {
+  border: 2px solid #8FC1E3;
+  background: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 5px;
+  color: #8FC1E3;
+  font-weight: bold;
+}
+
+.Navbtn:hover{
+  color: #7da8c5;
+}
+
+.Navbtn::before{
+background: #8FC1E3;
+z-index: -1;
+transition: 0.8s;
 }
