@@ -36,7 +36,7 @@ nav li:not(:last-child) {
 }
 
 .Navbtn {
-  border: 1px solid #00B7C2;
+  border: 2px solid #8FC1E3;
   background: none;
 }
 
@@ -101,14 +101,12 @@ main.introPage img {
 }
 
 .myIntro {
-
   margin: 15px;
   padding: 15px;
   padding-bottom: 50px;
   background-color: #f7f7f7;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 div.socialLinks img{
