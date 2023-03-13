@@ -114,15 +114,13 @@ h1 {
 }
 
 .post {
-  margin: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 15px;
   background-color: #F8F8F8;
   border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .left-column {
