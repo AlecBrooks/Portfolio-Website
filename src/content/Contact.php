@@ -1,5 +1,6 @@
 <div id="MyContent">
     <?php include 'PHPMailer/process_form.php'?>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <main class = "contactmeBox">
         <ul>
             <li class="post">
@@ -13,6 +14,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="15" cols="70"></textarea></textarea><br>
                     <input type="submit" name="submit" value="Send">
+                    <div class='g-recaptcha' data-sitekey="6Lc1hvokAAAAADpWpO6GFm1qbY4j0tqRyC9LOVTD"></div>
                     <?php echo $alert; ?>
                 </form>
             </li>
