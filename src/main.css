@@ -159,8 +159,6 @@ main.introPage img {
   margin: 0 auto;
   margin-top: 15px;
   padding: 15px;
-
-
   list-style: none;
   position: relative;
   display: flex;
@@ -219,6 +217,12 @@ transition: 0.5s;
 .socialLinks li:nth-child(3) a:hover {
   color: #333;
 }
+
+.CnCs {
+  list-style: none;
+
+}
+
 
 /*Footer Style*/
 .footer {
