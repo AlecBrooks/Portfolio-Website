@@ -136,6 +136,12 @@ div.socialLinks img{
 
 /*Nav Bar Style*/
 
+nav {
+
+  width: 80px;
+
+}
+
 nav ul {
   list-style: none;
   display: flex;
