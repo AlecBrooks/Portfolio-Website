@@ -200,6 +200,8 @@ transition: 0.5s;
               inset 2px 24px 10px rgba(0,0,0,0.1);
 }
 
+
+
 .socialLinks li a:before {
   content: '';
   position: absolute;
@@ -211,9 +213,9 @@ transition: 0.5s;
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.socialLinks li:nth-child(1) a:hover {
+.socialLinks li:nth-child(1) a:before {
 
-  background-color: #ea4c89;
+  background-color: #171515;
 
 }
 
