@@ -1,4 +1,18 @@
-function embedHTML(url) {
+
+
+function Pages(url) {
+
+    function PageVariable(url)
+    function embedHTML()
+
+}
+
+function  PageVariable(url) {
+    localStorage.setItem("PageVar", url);
+}
+
+function embedHTML() {
+    const url = localStorage.getItem("PageVar");
     const xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
     xhr.responseType = "document";
