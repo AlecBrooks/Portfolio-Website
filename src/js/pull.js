@@ -2,9 +2,10 @@
 
 function Pages(url) {
 
+    console.log(localStorage.setItem("PageVar", url));
      PageVariable(url);
      embedHTML();
-
+     console.log(localStorage.setItem("PageVar", url));
 }
 
 function PageVariable(url) {
