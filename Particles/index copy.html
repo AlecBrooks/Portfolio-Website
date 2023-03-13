@@ -14,7 +14,10 @@
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     
     <script>
-      window.particlesJS.load()('particles-js',
+
+      import 'particles.js/particles';
+      const particlesJS = window.particlesJS;
+      particlesJS.load()('particles-js',
       'particles.json', function(){
         console.log("particles.json loaded...");
       });
