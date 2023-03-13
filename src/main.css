@@ -227,6 +227,9 @@ input[type="submit"]:hover {
   font-weight: bold;
   transition: 0.8;
   cursor: pointer;
+  width: 100%;
+  max-width: 290px;
+  box-sizing: border-box;
 }
 
 .Navbtn:hover{
