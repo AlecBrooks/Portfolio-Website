@@ -20,4 +20,11 @@
             </li>
         </ul>
     </main>
+
+    <script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+    </script>
+
 </div>
