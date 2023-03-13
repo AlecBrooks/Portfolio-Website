@@ -215,7 +215,7 @@ transition: 0.5s;
 
 .socialLinks li:nth-child(1) a:before {
 
-  background-color: #171515;
+  color: #171515;
 
 }
 
