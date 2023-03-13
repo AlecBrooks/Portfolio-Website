@@ -2,8 +2,8 @@
 
 function Pages(url) {
 
-    function PageVariable(url);
-    function embedHTML();
+     PageVariable(url);
+     embedHTML();
 
 }
 
