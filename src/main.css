@@ -39,10 +39,8 @@ nav li:not(:last-child) {
   border: 2px solid #8FC1E3;
   background: none;
   padding: 5px 10px;
-  font-size: 10px;
-  font-family: "montserrat";
+  font-size: 15px;
   margin: 5px;
-
 }
 
 /* shared Content Styles */
