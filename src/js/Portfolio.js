@@ -1,44 +1,41 @@
 fetch('/src/json/portfolio-posts.json')
   .then(response => response.json())
   .then(data => {
-    const photos = data.photos;
-    const photoList = document.getElementById("photo-list");
+    const blogPosts = data.blogPosts;
+    const postList = document.getElementById("post-list");
 
-    photos.forEach(photo => {
-      const photoItem = document.createElement("li");
-      photoItem.classList.add("photo");
+    blogPosts.forEach(post => {
+      const postItem = document.createElement("li");
+      postItem.classList.add("post");
 
-      const leftColumn = document.createElement("div");
-      leftColumn.classList.add("left-column");
+      const postTitle = document.createElement("h2");
+      postTitle.innerText = post.title;
 
-      const photoTitle = document.createElement("h2");
-      photoTitle.innerText = photo.title;
+      const postDate = document.createElement("p");
+      postDate.innerText = new Date(post.datePublished).toLocaleDateString();
 
-      const photoDate = document.createElement("p");
-      photoDate.innerText = new Date(photo.dateTaken).toLocaleDateString();
+      const postContent = document.createElement("div");
 
-      const photoContent = document.createElement("div");
-
-      photo.content.forEach(p => {
+      post.content.forEach(p => {
         const para = document.createElement("p");
         para.innerText = p;
-        photoContent.appendChild(para);
+        postContent.appendChild(para);
       });
 
-      leftColumn.appendChild(photoTitle);
-      leftColumn.appendChild(photoDate);
-      leftColumn.appendChild(photoContent);
+      postItem.appendChild(postTitle);
+      postItem.appendChild(postDate);
+      postItem.appendChild(postContent);
 
-      photoItem.appendChild(leftColumn);
+      post.images.forEach(image => {
+        const postImage = document.createElement("img");
+        postImage.classList.add("postImage");
+        postImage.setAttribute("src", image.url);
+        postImage.setAttribute("alt", image.altText);
 
-      const photoImage = document.createElement("img");
-      photoImage.classList.add("photoImage");
-      photoImage.setAttribute("src", photo.image.url);
-      photoImage.setAttribute("alt", photo.image.altText);
+        postItem.appendChild(postImage);
+      });
 
-      photoItem.appendChild(photoImage);
-
-      photoList.appendChild(photoItem);
+      postList.appendChild(postItem);
     });
   })
   .catch(error => {
