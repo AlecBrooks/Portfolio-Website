@@ -41,6 +41,13 @@ nav li:not(:last-child) {
   padding: 5px 10px;
   font-size: 15px;
   margin: 5px;
+  color: #8FC1E3;
+}
+
+.Navbtn:hover{
+
+  color: #7da8c5;
+
 }
 
 /* shared Content Styles */
