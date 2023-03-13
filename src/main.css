@@ -51,6 +51,7 @@ nav li:not(:last-child) {
 
 .Navbtn::before{
 background: #8FC1E3;
+z-index: -1;
 transition: 0.8s;
 }
 
