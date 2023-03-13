@@ -204,6 +204,7 @@ input[type="submit"]:hover {
 nav ul {
   list-style: none;
 
+  justify-content: center;
 }
 
 nav li {
