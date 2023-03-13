@@ -210,7 +210,6 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 1px solid #C3DBFB;
   margin-left: 20px;
 }
 
@@ -230,8 +229,8 @@ nav button {
 }
 
 nav button:hover{
+  border-bottom: 1px solid #7da8c5;
   color: #7da8c5;
-  background: #8FC1E3;
 }
 
 nav button::before{
