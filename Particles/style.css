@@ -19,7 +19,7 @@ canvas {
 } /* ---- stats.js ---- */
 .count-particles {
   background: #000022;
-  position: absolute;
+  position: relative;
   top: 48px;
   left: 0;
   width: 80px;
