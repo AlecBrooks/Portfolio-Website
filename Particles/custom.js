@@ -1,4 +1,4 @@
-particlesJS("bg", {
+particles-JS("bg", {
     particles: {
       number: { value: 150, density: { enable: true, value_area: 800 } },
       color: { value: "#434343" },
@@ -70,4 +70,6 @@ particlesJS("bg", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+  
+
   

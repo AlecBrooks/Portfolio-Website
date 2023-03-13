@@ -7,11 +7,19 @@
     <link rel="stylesheet" type="text/css" href="/Particles/style.css">
   </head>
   <body>
-    <canvas id="particles-js-canvas-el" class="particles-js-canvas-el" name="particles-js-canvas-el">
+    <div id="particles-js">
 
-    </canvas>
+    </div>
 
-    <script type="text/javascript" src="/Particles/particles.min.js"></script>
-    <script type="text/javascript" src="/Particles/custom.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+      particlesJS.load()('particles-js',
+      'particles.json', function(){
+        console.log("particles.json loaded...");
+      });
+    
+    </script>
+
   </body>
 </html>
