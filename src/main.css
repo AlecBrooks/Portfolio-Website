@@ -191,6 +191,7 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
+/* background */
 #particles-js canvas {
     display: block;
     vertical-align: bottom;
