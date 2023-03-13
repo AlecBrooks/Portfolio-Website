@@ -146,7 +146,7 @@ main.introPage {
 
   
 
-  margin: 100px;
+  margin: 0 auto;
   padding: 15px;
   background-color: #F8F8F8;
   border-radius: 5px;
@@ -234,11 +234,6 @@ transition: 0.5s;
 .socialLinks li:nth-child(2) a:hover {
   color: #0077b5;
 }
-
-
-
-
-
 
 /*Footer Style*/
 .footer {
