@@ -213,15 +213,6 @@ input[type="submit"]:hover {
 }
 
 /*Footer Style*/
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-.content {
-  padding-bottom: 100px; /* height of the footer */
-}
-
 .footer {
   background-color: #FFFFFF;
   height: 100px;
