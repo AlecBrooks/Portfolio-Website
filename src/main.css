@@ -201,7 +201,8 @@ input[type="submit"]:hover {
 
 nav ul {
   list-style: none;
-  justify-content: center;
+  display: flex;
+  
   margin: 5px;
   padding: 5px;
 }
