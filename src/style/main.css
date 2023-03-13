@@ -90,7 +90,7 @@ transition: 0.8s;
 /* shared Content Styles */
 main {
   max-width: 1500px;
-  margin: 0 auto;
+  margin-top: 20px;
   padding: 40px;
 }
 
