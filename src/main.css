@@ -29,6 +29,8 @@ nav ul {
 
 nav li {
   margin-left: 20px;
+  display: block;
+
 }
 
 nav li:not(:last-child) {
