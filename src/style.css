@@ -1,10 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #000000;
+  background-color: #f4f4f4;
 }
 
 header {
-  background-color: #ff00ff;
+  background-color: #FFFFFF;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -19,12 +19,12 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #333333;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #80ff00;
+  color: #00B7C2;
 }
 
 nav li {
@@ -44,14 +44,14 @@ main {
 
 h1 {
   font-size: 36px;
-  color: #ffffff;
+  color: #333333;
   margin-bottom: 20px;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
-  color: #c0c0c0;
+  color: #555555;
   margin-bottom: 10px;
 }
 
@@ -62,7 +62,7 @@ h1 {
 .post {
   margin: 15px;
   padding: 15px;
-  background-color: #808080;
+  background-color: #f7f7f7;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -119,17 +119,15 @@ textarea {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #c0c0c0;
+  border: 1px solid #ccc;
   resize: none;
   font-size: 16px;
   font-family: Arial, sans-serif;
-  background-color: #808080;
-  color: #ffffff;
 }
 
 input[type="submit"] {
-  background-color: #80ff00;
-  color: #000000;
+  background-color: #00B7C2;
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -139,7 +137,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #c0c0c0;
+  background-color: #0069d9;
 }
 
 .contactmeBox {
