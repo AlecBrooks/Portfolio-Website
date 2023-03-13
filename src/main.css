@@ -165,6 +165,7 @@ main.introPage img {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   margin-left: 10px;
+  list-style: none;
 }
 
 .socialLinks i {
