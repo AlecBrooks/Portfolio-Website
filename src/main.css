@@ -202,7 +202,6 @@ transition: 0.5s;
 
 
 .socialLinks li a:before {
-
   content: '';
   position: absolute;
   top: 10px;
@@ -211,6 +210,11 @@ transition: 0.5s;
   bottom: 10px;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.socialLinks li:nth-child(1) a:before {
+
+  background-color: ffff;
 
 }
 
