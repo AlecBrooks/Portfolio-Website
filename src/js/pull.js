@@ -1,6 +1,6 @@
 function embedHTML() {
     const xhr = new XMLHttpRequest();
-    const url = "/content/intro.html";
+    const url = "/src/content/intro.html";
     xhr.open("GET", url, true);
     xhr.responseType = "document";
     xhr.onload = function () {
