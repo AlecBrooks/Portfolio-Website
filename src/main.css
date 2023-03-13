@@ -79,6 +79,7 @@ nav button:hover{
   color: #7da8c5;
   font-size: 20px;
   transform: translateY(-10px);
+  transition: 0.5s;
 }
 
 nav button::before{
