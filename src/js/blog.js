@@ -1,46 +1,57 @@
 fetch('/src/json/blog-posts.json')
   .then(response => response.json())
   .then(data => {
-  const blogPosts = data.blogPosts;
-  const blogPostList = document.getElementById("blog-post-list");
+    const blogPosts = data.blogPosts;
+    const blogPostList = document.getElementById("blog-post-list");
 
-    blogPosts.forEach(post => {
-      const postItem = document.createElement("li");
-      postItem.classList.add("post");
+    blogPosts.forEach(blogPost => {
+      const blogPostItem = document.createElement("li");
+      blogPostItem.classList.add("post");
 
       const leftColumn = document.createElement("div");
       leftColumn.classList.add("left-column");
 
-      const postTitle = document.createElement("h2");
-      postTitle.innerText = post.title;
+      const blogPostTitle = document.createElement("h2");
+      blogPostTitle.innerText = blogPost.title;
 
-      const postDate = document.createElement("p");
-      postDate.innerText = new Date(post.datePublished).toLocaleDateString();
+      const blogPostDate = document.createElement("p");
+      blogPostDate.innerText = new Date(blogPost.datePublished).toLocaleDateString();
 
-      const postContent = document.createElement("div");
+      const blogPostContent = document.createElement("div");
 
-      post.content.forEach(p => {
+      blogPost.content.forEach(p => {
         const para = document.createElement("p");
         para.innerText = p;
-        postContent.appendChild(para);
+        blogPostContent.appendChild(para);
       });
 
-      leftColumn.appendChild(postTitle);
-      leftColumn.appendChild(postDate);
-      leftColumn.appendChild(postContent);
+      leftColumn.appendChild(blogPostTitle);
+      leftColumn.appendChild(blogPostDate);
+      leftColumn.appendChild(blogPostContent);
 
-      postItem.appendChild(leftColumn);
+      blogPostItem.appendChild(leftColumn);
 
-      const postImage = document.createElement("img");
-      postImage.classList.add("postImage");
-      postImage.setAttribute("src", post.image.url);
-      postImage.setAttribute("alt", post.image.altText);
+      const blogPostImageList = document.createElement("div");
+      blogPostImageList.classList.add("right-column");
 
-      postItem.appendChild(postImage);
+      blogPost.image.forEach(image => {
+        const blogPostImageItem = document.createElement("div");
+        blogPostImageItem.classList.add("image-item");
 
-      blogPostList.appendChild(postItem);
+        const blogPostImage = document.createElement("img");
+        blogPostImage.classList.add("blog-post-image");
+        blogPostImage.setAttribute("src", image.url);
+        blogPostImage.setAttribute("alt", image.altText);
+
+        blogPostImageItem.appendChild(blogPostImage);
+        blogPostImageList.appendChild(blogPostImageItem);
+      });
+
+      blogPostItem.appendChild(blogPostImageList);
+
+      blogPostList.appendChild(blogPostItem);
     });
   })
   .catch(error => {
-  console.error('Error:', error);
-});
+    console.error('Error:', error);
+  });
