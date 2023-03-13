@@ -224,7 +224,11 @@ transition: 0.5s;
     display:inline-block;
 }
 
-
+.CnC img:hover {
+  width : 192px;
+  height:192px;
+  position:absolute;  
+}
 
 
 /*Footer Style*/
