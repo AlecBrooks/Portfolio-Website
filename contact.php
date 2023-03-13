@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="src/main.css">
-	<link rel="stylesheet" type="text/css" href="src/colors/Gatsby">
+	<script src="script.js"></script>
     <link rel="icon" href="">
 </head>
 <body>
