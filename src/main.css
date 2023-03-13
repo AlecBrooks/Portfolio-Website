@@ -7,15 +7,17 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  color: #333333;
   height: 100%;
   margin: 0;
 }
 
 header {
-  background-color: #FFFFFF;
+  background-color: #F8F8F8;
   padding: 20px;
+  border-bottom: 2px solid #8FC1E3;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,20 +37,21 @@ h1 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  color: #555555;
+  color: #666666;
   margin-bottom: 10px;
 }
 
 h1 {
   text-align: center;
+  color: #333333;
 }
 
 .post {
   margin: 15px;
   padding: 15px;
-  background-color: #f7f7f7;
+  background-color: #F8F8F8;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -95,74 +98,6 @@ div.socialLinks img{
   height: 30px;
 }
 
-/*Contact me page*/
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-}
-
-label {
-  margin-right: 1rem;
-}
-
-input,
-textarea {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid #ccc;
-  resize: none;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-}
-
-input[type="submit"] {
-  background-color: #00B7C2;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-size: 22px;
-  font-family: Arial, sans-serif;
-}
-
-input[type="submit"]:hover {
-  background-color: #0069d9;
-}
-
-.contactmeBox {
-  display: flex;
-  justify-content: center;
-}
-
-.alert-success{
-  z-index: 1;
-  background-color: #d4edda;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 20px 40px;
-  width: 60%;
-  border-left: 3px solid #3ad66e;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.alert-error{
-  z-index: 1;
-  background-color: #fff3cd;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 20px 40px;
-  width: 60%;
-  border-left: 3px solid #ffa502;
-  border-radius: 4px;
-  text-align: center;
-}
-
 /* background */
 #particles-js canvas {
     display: block;
@@ -186,18 +121,20 @@ input[type="submit"]:hover {
 
 /*Footer Style*/
 .footer {
-  background-color: #FFFFFF;
+  background-color: #F8F8F8;
   height: 100px;
   bottom: 0;
   width: 100%;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 14px;
-  color: #555555;
-
+  color: #666666;
+  border-top: 2px solid #8FC1E3;
   padding-top: 20px;
   padding-bottom: 0px;
 }
+
+/*Nav Bar Style*/
 
 nav ul {
   list-style: none;
