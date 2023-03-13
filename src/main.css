@@ -221,7 +221,6 @@ transition: 0.5s;
 .CnCs {
   	width:100%;
     height:100%;
-    border:1px solid black;
     white-space:nowrap;
     height:130px;
     display:inline-block;
@@ -232,11 +231,10 @@ transition: 0.5s;
 .CnCs img {
   width:128px;
   height:128px;
-  transition: ease-in-out 0s;  
+  transition: ease-in-out 0.5s;  
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateX(0);
    z-index:1;
-  background-color:grey;
 }
 
 .CnCs img:hover {
