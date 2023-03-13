@@ -169,6 +169,12 @@ main.introPage img {
   align-items: flex-start;
 }
 
+.socialLinks i {
+  width: 10px;
+  height: 10px;
+}
+
+
 
 
 /*Footer Style*/
