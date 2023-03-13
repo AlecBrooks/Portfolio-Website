@@ -171,6 +171,8 @@ main.introPage img {
 
 .socialLinks i {
 font-size: 40px;
+position: relative;
+display: flex;
 }
 
 
