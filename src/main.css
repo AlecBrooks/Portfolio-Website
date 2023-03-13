@@ -176,15 +176,15 @@ list-style: none;
 
 .socialLinks li a {
 position: relative;
-width: 60px;
-height: 60px;
+width: 50px;
+height: 50px;
 display: flex;
 justify-content: center;
 align-items: center;
 background: #fff;
 margin: 0 10px;
 text-decoration: none;
-font-size: 30px;
+font-size: 25px;
 border-radius: 50%;
 color: #e2e2e2;
 box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
