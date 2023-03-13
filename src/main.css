@@ -97,7 +97,11 @@ main.introPage img {
   margin-right: 40px;
   float: left;
 
-    margin: 15px;
+}
+
+.myIntro {
+
+  margin: 15px;
   padding: 15px;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -106,8 +110,6 @@ main.introPage img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-
-
 
 }
 
