@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #F2F2F2;
   color: #333333;
   height: 100%;
@@ -95,7 +95,7 @@ main {
 }
 
 h1 {
-  font-family: 'exo 2';
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   color: #3D7190;
   margin-bottom: 20px;
