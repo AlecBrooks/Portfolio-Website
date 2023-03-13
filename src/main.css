@@ -2,6 +2,10 @@
   position: relative; z-index: 100;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -187,21 +191,6 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-/*Footer Style*/
-footer {
-  background-color: #FFFFFF;
-  padding: 20px;
-  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-size: 14px;
-  color: #555555;
-}
-
-body,
-html {
-    height: 100%
-}
-
 #particles-js canvas {
     display: block;
     vertical-align: bottom;
@@ -221,3 +210,25 @@ html {
     top: 0;
     left: 0
 }
+
+
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 100px; /* height of the footer */
+}
+
+/*Footer Style*/
+footer {
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+}
+
