@@ -216,7 +216,6 @@ input[type="submit"]:hover {
 .footer {
   background-color: #FFFFFF;
   height: 100px;
-  position: absolute;
   bottom: 0;
   width: 100%;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
