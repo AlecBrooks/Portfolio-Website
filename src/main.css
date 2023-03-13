@@ -38,6 +38,11 @@ nav li:not(:last-child) {
 .Navbtn {
   border: 2px solid #8FC1E3;
   background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  margin: 10px;
+  
 }
 
 /* shared Content Styles */
