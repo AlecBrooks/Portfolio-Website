@@ -223,8 +223,6 @@ transition: 0.5s;
 }
 
 .CnCs li a img {
-  width: 125px;
-  height: 125px;
   display: block;
 }
 .CnCs li a:hover img {
