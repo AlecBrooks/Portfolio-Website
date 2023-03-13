@@ -143,11 +143,9 @@ div.right-column img {
 /*introPage*/
 
 main.introPage {
-
-  
-  
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 15px;
   background-color: #F8F8F8;
   border-radius: 5px;
