@@ -200,6 +200,13 @@ transition: 0.5s;
               inset 2px 24px 10px rgba(0,0,0,0.1);
 }
 
+.socialLinks li a .fa{
+
+  position: relative;
+  z-index: 1;
+
+}
+
 
 .socialLinks li a:before {
   content: '';
