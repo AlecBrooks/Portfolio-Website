@@ -4,7 +4,7 @@ function Pages(url) {
 
 
      PageVariable(url);
-     console.log(localStorage.setItem("PageVar", url));
+     console.log(localStorage.getItem("PageVar"));
      embedHTML();
 }
 
