@@ -201,6 +201,19 @@ transition: 0.5s;
 }
 
 
+.socialLinks li a:before {
+
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+
+}
+
 
 
 
