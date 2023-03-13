@@ -7,7 +7,7 @@ function Pages(url) {
 
 }
 
-function  PageVariable(url) {
+function PageVariable(url) {
     localStorage.setItem("PageVar", url);
 }
 
