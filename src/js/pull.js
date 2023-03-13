@@ -15,5 +15,4 @@ function embedHTML() {
     };
     xhr.send();
   }
-  
-  embedHTML();	
+  embedHTML();
