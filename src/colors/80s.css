@@ -33,8 +33,6 @@ body {
   input,
   textarea {
     border: 1px solid #00ff00;
-    resize: none;
-    font-size: 16px;
     font-family: 'Press Start 2P', cursive;
     background-color: #0c0c0c;
     color: #00ff00;
