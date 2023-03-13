@@ -220,12 +220,14 @@ input[type="submit"]:hover {
 .Navbtn {
   border: 2px solid #8FC1E3;
   background: none;
-  padding: 5px 5px;
+  padding: 5px 10px;
   font-size: 15px;
   margin: 5px;
   color: #8FC1E3;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 15px;
+  transition: 0.8;
+  cursor: pointer;
 }
 
 .Navbtn:hover{
