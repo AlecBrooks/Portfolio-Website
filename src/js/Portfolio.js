@@ -32,7 +32,7 @@ fetch('/src/json/portfolio-posts.json')
       blogPostItem.appendChild(leftColumn);
 
       const blogPostImageList = document.createElement("div");
-      blogPostImageList.classList.add("left-column");
+      blogPostImageList.classList.add("right-column");
 
       blogPost.image.forEach(image => {
         const blogPostImageItem = document.createElement("div");
