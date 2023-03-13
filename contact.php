@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="src/main.css">
 	<script src="/src/colors/colors.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="icon" href="">
 </head>
 <body>
@@ -34,6 +35,7 @@
                     <input type="text" id="subject" name="subject" required><br>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="15" cols="70"></textarea></textarea><br>
+                    <div class="g-recaptcha" data-sitekey="6Lc1hvokAAAAADpWpO6GFm1qbY4j0tqRyC9LOVTD"></div>
                     <input type="submit" name="submit" value="Send">
                     <?php echo $alert; ?>
                 </form>
@@ -46,3 +48,12 @@
 		powered by notepad.exe
 		<p>&copy; 2023 Alec Brooks. All rights reserved.</p>
 	</footer>
+</body>
+
+<script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
+
+</html>
