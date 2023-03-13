@@ -237,6 +237,10 @@ transition: 0.5s;
   color: #0077b5;
 }
 
+.socialLinks li:nth-child(3) a:hover {
+  color: #333;
+}
+
 /*Footer Style*/
 .footer {
   background-color: #F8F8F8;
