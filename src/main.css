@@ -174,9 +174,10 @@ main.introPage img {
 
 .socialLinks
 {
-  margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 30px;
+  margin-left: 30;
+  margin-right: 30;
   padding: 15px;
   background-color: #F8F8F8;
   border-radius: 5px;
