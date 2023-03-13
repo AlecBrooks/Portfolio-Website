@@ -209,7 +209,7 @@ transition: 0.5s;
   right: 10px;
   bottom: 10px;
   border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 0px solid rgba(0, 0, 0, 0.1);
 }
 
 .socialLinks li:nth-child(1) a:hover {
