@@ -227,7 +227,7 @@ nav button {
 }
 
 nav button:hover{
-  border-bottom: 1px solid #7da8c5;
+  border-bottom: 3px solid #7da8c5;
   color: #7da8c5;
 }
 
