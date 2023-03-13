@@ -124,6 +124,7 @@ h1 {
 }
 
 .post img {
+  float: left;
   max-width: 100%;
   height: auto;
   border-radius: 0%;
