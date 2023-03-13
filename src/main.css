@@ -219,17 +219,31 @@ transition: 0.5s;
 }
 
 .CnCs {
-  list-style: none;
+  	width:100%;
+    height:100%;
+    border:1px solid black;
+    white-space:nowrap;
+    height:130px;
+    display:inline-block;
+    overflow-x:scroll;
+    overflow-y:hidden;
 }
 
-.CnCs li a img {
-
+.CnCs img {
+  width:128px;
+  height:128px;
+  transition: ease-in-out 0s;  
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+   z-index:1;
+  background-color:grey;
 }
-.CnCs li a:hover img {
+
+.CnCs img:hover {
+  width : 192px;
+  height:192px;
   position:absolute;
-  z-index: 100;
-  transform: scale(3);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  top:0;    
 }
 
 
