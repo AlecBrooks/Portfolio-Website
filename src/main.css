@@ -163,7 +163,7 @@ main.introPage img {
   background-color: #F8F8F8;
   border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  
+  display:inline-block
 }
 
 .socialLinks i {
