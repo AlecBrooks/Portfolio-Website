@@ -1,6 +1,5 @@
-function embedHTML() {
+function embedHTML(url) {
     const xhr = new XMLHttpRequest();
-    const url = "/src/content/intro.html";
     xhr.open("GET", url, true);
     xhr.responseType = "document";
     xhr.onload = function () {
@@ -16,4 +15,3 @@ function embedHTML() {
     xhr.send();
     console.log("Pulled");
   }
-  embedHTML();
