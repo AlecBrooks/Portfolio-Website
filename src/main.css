@@ -27,16 +27,6 @@ nav ul {
   justify-content: center;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #00B7C2;
-}
-
 nav li {
   margin-left: 20px;
 }
@@ -46,9 +36,8 @@ nav li:not(:last-child) {
 }
 
 .Navbtn {
-
+  border: #00B7C2;
   background: none;
-
 }
 
 /* shared Content Styles */
