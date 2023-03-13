@@ -222,7 +222,12 @@ transition: 0.5s;
   list-style: none;
 }
 
-.CnCs li :hover img {
+.CnCs li a img {
+  width: 125px;
+  height: 125px;
+  display: block;
+}
+.CnCs li a:hover img {
   transform: scale(1.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
