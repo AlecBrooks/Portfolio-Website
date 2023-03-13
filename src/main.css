@@ -123,15 +123,7 @@ h1 {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.left-column {
-  flex-basis: 50%;
-}
-
-.right-column {
-  flex-basis: 40%;
-}
-
-div.right-column img {
+.post img {
   max-width: 100%;
   height: auto;
   border-radius: 0%;
