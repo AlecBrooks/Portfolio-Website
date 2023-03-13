@@ -2,40 +2,47 @@ fetch('/src/json/portfolio-posts.json')
   .then(response => response.json())
   .then(data => {
     const blogPosts = data.blogPosts;
-    const postList = document.getElementById("post-list");
+    const photoList = document.getElementById("photo-list");
 
     blogPosts.forEach(post => {
-      const postItem = document.createElement("li");
-      postItem.classList.add("post");
+      const photos = post.image;
 
-      const postTitle = document.createElement("h2");
-      postTitle.innerText = post.title;
+      const photoItem = document.createElement("li");
+      photoItem.classList.add("photo");
 
-      const postDate = document.createElement("p");
-      postDate.innerText = new Date(post.datePublished).toLocaleDateString();
+      const leftColumn = document.createElement("div");
+      leftColumn.classList.add("left-column");
 
-      const postContent = document.createElement("div");
+      const photoTitle = document.createElement("h2");
+      photoTitle.innerText = post.title;
+
+      const photoDate = document.createElement("p");
+      photoDate.innerText = new Date(post.datePublished).toLocaleDateString();
+
+      const photoContent = document.createElement("div");
 
       post.content.forEach(p => {
         const para = document.createElement("p");
         para.innerText = p;
-        postContent.appendChild(para);
+        photoContent.appendChild(para);
       });
 
-      postItem.appendChild(postTitle);
-      postItem.appendChild(postDate);
-      postItem.appendChild(postContent);
+      leftColumn.appendChild(photoTitle);
+      leftColumn.appendChild(photoDate);
+      leftColumn.appendChild(photoContent);
 
-      post.images.forEach(image => {
-        const postImage = document.createElement("img");
-        postImage.classList.add("postImage");
-        postImage.setAttribute("src", image.url);
-        postImage.setAttribute("alt", image.altText);
+      photoItem.appendChild(leftColumn);
 
-        postItem.appendChild(postImage);
+      photos.forEach(photo => {
+        const photoImage = document.createElement("img");
+        photoImage.classList.add("photoImage");
+        photoImage.setAttribute("src", photo.url);
+        photoImage.setAttribute("alt", photo.altText);
+
+        photoItem.appendChild(photoImage);
       });
 
-      postList.appendChild(postItem);
+      photoList.appendChild(photoItem);
     });
   })
   .catch(error => {
