@@ -225,6 +225,7 @@ input[type="submit"]:hover {
   margin: 5px;
   color: #8FC1E3;
   font-weight: bold;
+  border-radius: 25px;
 }
 
 .Navbtn:hover{
