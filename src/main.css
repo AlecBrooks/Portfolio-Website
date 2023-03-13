@@ -226,8 +226,7 @@ transition: 0.5s;
 
 }
 .CnCs li a:hover img {
-  float: none;
-  position: relative;
+  position:absolute;
   z-index: 100;
   transform: scale(3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
