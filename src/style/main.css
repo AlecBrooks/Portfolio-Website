@@ -95,9 +95,11 @@ main {
 }
 
 h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 36px;
-  color: #333333;
+  color: #3D7190;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 p {
@@ -105,11 +107,6 @@ p {
   line-height: 1.5;
   color: #666666;
   margin-bottom: 10px;
-}
-
-h1 {
-  text-align: center;
-  color: #333333;
 }
 
 .post {
