@@ -15,7 +15,7 @@
 				<header>
 					<nav>
 						<ul>
-							<li><button onclick="embedHTML('/src/content/intro.html')">Load Content</button></li>
+							<li><button onclick="embedHTML('/src/content/test.html')">Load Content</button></li>
 							<li><a href="index.html">Intro</a></li>
 							<li><a href="portfolio.html">Data Analysis Projects</a></li>
 							<li><a href="blog.html">Programing Projects</a></li>
@@ -40,7 +40,7 @@
 </body>
 <script>
 window.onload = function() {
-	// Code to be executed when the page finishes loading
+	embedHTML('/src/content/intro.html')
 	console.log("Page finished loading!");
   };
 </script>
