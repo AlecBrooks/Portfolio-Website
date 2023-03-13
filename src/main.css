@@ -145,8 +145,9 @@ div.right-column img {
 main.introPage {
 
   
-
+  
   margin: 0 auto;
+  margin-top: 30px;
   padding: 15px;
   background-color: #F8F8F8;
   border-radius: 5px;
