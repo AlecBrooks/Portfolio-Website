@@ -212,8 +212,7 @@ input[type="submit"]:hover {
     left: 0
 }
 
-
-
+/*Footer Style*/
 .wrapper {
   min-height: 100%;
   position: relative;
@@ -222,7 +221,6 @@ input[type="submit"]:hover {
 .content {
   padding-bottom: 100px; /* height of the footer */
 }
-
 
 .footer {
   background-color: #FFFFFF;
@@ -234,13 +232,5 @@ input[type="submit"]:hover {
   text-align: center;
   font-size: 14px;
   color: #555555;
-}
-
-/*Footer Style*/
-footer {
-
   padding: 20px;
-  
-
 }
-
