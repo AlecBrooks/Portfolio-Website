@@ -24,7 +24,7 @@
 					</nav>
 				</header>
   				<main class="introPage">
-
+				<!--CONTENT--> 
   				</main>
   			</div> 
 		</div>
@@ -36,28 +36,6 @@
 	</div>
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="/Particles/conf.js"></script>
-
-	<script>
-function embedHTML() {
-  const xhr = new XMLHttpRequest();
-  const url = "intro.html";
-  xhr.open("GET", url, true);
-  xhr.responseType = "document";
-  xhr.onload = function () {
-    const responseHTML = xhr.response.documentElement;
-    const mainElement = responseHTML.querySelector("main");
-    const currentMainElement = document.querySelector("main");
-    if (mainElement && currentMainElement) {
-      currentMainElement.innerHTML = mainElement.innerHTML;
-    } else {
-      console.error("Could not find the <main> element in either the response HTML or the current document.");
-    }
-  };
-  xhr.send();
-}
-
-embedHTML();	
-	</script>
-
+	<script src="/src/js/pull.js"></script>
 </body>
 </html>
