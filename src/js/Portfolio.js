@@ -6,7 +6,7 @@ fetch('/src/json/portfolio-posts.json')
 
     blogPosts.forEach(blogPost => {
       const blogPostItem = document.createElement("li");
-      blogPostItem.classList.add("blog-post");
+      blogPostItem.classList.add("post");
 
       const leftColumn = document.createElement("div");
       leftColumn.classList.add("left-column");
