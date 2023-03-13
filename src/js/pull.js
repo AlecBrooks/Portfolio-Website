@@ -28,7 +28,6 @@ function embedHTML() {
       }
     };
     xhr.send();
-    console.log("Pulled");
     let myVariable = localStorage.getItem('PageVar');
     localStorage.removeItem('PageVar');
   }
