@@ -35,7 +35,7 @@
                     <input type="text" id="subject" name="subject" required><br>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="15" cols="70"></textarea></textarea><br>
-                    <div class="g-recaptcha" data-sitekey="6Lc1hvokAAAAADpWpO6GFm1qbY4j0tqRyC9LOVTD"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lc1hvokAAAAADpWpO6GFm1qbY4j0tqRyC9LOVTD" required></div>
                     <input type="submit" name="submit" value="Send">
                     <?php echo $alert; ?>
                 </form>
