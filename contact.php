@@ -33,7 +33,7 @@
                     <input type="text" id="subject" name="subject" required><br>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="15" cols="70"></textarea></textarea><br>
-                    <input type="submit" name="submit" value="Submit">
+                    <input type="submit" name="submit" value="Send">
                     <?php echo $alert; ?>
                 </form>
             </li>
