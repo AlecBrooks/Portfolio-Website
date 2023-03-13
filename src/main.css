@@ -215,6 +215,10 @@ transition: 0.5s;
   color: #171515;
 }
 
+.socialLinks li:nth-child(2) a:hover {
+  color: #0077b5;
+}
+
 
 
 
