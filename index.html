@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="src/content/">
+	<link rel="stylesheet" type="text/css" href="src/style/main.css">
 	<link rel="icon" href="">
 </head>
 <body>
@@ -13,10 +13,10 @@
 				<header>
 					<nav>
 						<ul>
-							<li><button onclick="Pages('')">Intro</button></li>
-							<li><button onclick="Pages('/src/content/Analysis.html')">Analysis</button></li>
-							<li><button onclick="Pages('/src/content/Design.html')">Design</button></li>
-							<li><button onclick="Pages('/src/content/Programing.html')">Programning</button></li>
+							<li><button onclick="Pages('/src/pages/intro.html')">Intro</button></li>
+							<li><button onclick="Pages('/src/pages/Analysis.html')">Analysis</button></li>
+							<li><button onclick="Pages('/src/pages/Design.html')">Design</button></li>
+							<li><button onclick="Pages('/src/pages/Programing.html')">Programning</button></li>
 						</ul>
 					</nav>
 				</header>
@@ -30,11 +30,11 @@
     	<p>&copy; 2023 Alec Brooks. All rights reserved.</p>
 	</div>
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script src="/Particles/conf.js"></script>
+	<script src="/src/js/Particles/conf.js"></script>
 	<script src="/src/js/pull.js"></script>
 	<script>
 		window.onload = function() {
-			Pages('/src/content/Intro.html')
+			Pages('/src/pages/Intro.html')
 		};
 	</script>
 </body>
