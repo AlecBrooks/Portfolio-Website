@@ -166,6 +166,8 @@ main.introPage img {
   display: flex;
   margin-left: 10px;
   list-style: none;
+  position: relative;
+  display: flex;
 }
 
 .socialLinks i {
