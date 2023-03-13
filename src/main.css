@@ -77,7 +77,8 @@ nav button {
 nav button:hover{
   border-bottom: 3px solid #8FC1E3;
   color: #7da8c5;
-  transform: translateY(-20px);
+  font-size: 20px;
+  transform: translateY(-10px);
 }
 
 nav button::before{
