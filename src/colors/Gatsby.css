@@ -2,7 +2,6 @@ body {
     font-family: 'Playfair Display', serif;
     background-color: #F1E7D3;
     color: #444444;
-    text-align: center;
   }
   
   header {
@@ -12,7 +11,6 @@ body {
   
   nav a {
     color: #444444;
-    text-transform: uppercase;
   }
   
   nav a:hover {
@@ -36,16 +34,13 @@ body {
   textarea {
     border-bottom: 2px solid #D4AF37;
     font-family: 'Playfair Display', serif;
-    background-color: transparent;
     color: #444444;
-    margin-bottom: 20px;
   }
   
   input[type="submit"] {
     background-color: #D4AF37;
     color: #FFFFFF;
     font-family: 'Playfair Display', serif;
-    transition: background-color 0.3s ease;
   }
   
   input[type="submit"]:hover {
@@ -67,7 +62,6 @@ body {
   footer {
     background-color: #F8EDEB;
     color: #666666;
-    text-align: center;
     border-top: 2px solid #D4AF37;
   }
   
