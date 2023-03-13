@@ -95,6 +95,7 @@ main {
 }
 
 h1 {
+  border-bottom: #8FC1E3;
   font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   color: #3D7190;
