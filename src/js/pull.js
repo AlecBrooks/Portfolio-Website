@@ -4,8 +4,8 @@ function Pages(url) {
 
 
      PageVariable(url);
-     embedHTML();
      console.log(localStorage.setItem("PageVar", url));
+     embedHTML();
 }
 
 function PageVariable(url) {
@@ -30,5 +30,5 @@ function embedHTML() {
     xhr.send();
     console.log("Pulled");
     let myVariable = localStorage.getItem('PageVar');
-    localStorage.removeItem('myVariable');
+    localStorage.removeItem('PageVar');
   }
