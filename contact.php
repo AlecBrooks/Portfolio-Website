@@ -15,10 +15,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="portfolio.html">Data Analysis Projects</a></li>
-                <li><a href="blog.html">Programing Projects</a></li>
-                <li><a href="contact.php">Contact Me</a></li>
+                <li><a href="index.html">Back</a></li>
             </ul>
         </nav>
     </header>
