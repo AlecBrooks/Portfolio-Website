@@ -210,8 +210,8 @@ nav ul {
 }
 
 nav li {
+  border-bottom: 1px solid #C3DBFB;
   margin-left: 20px;
-  display: block;
 }
 
 nav button {
