@@ -223,7 +223,7 @@ transition: 0.5s;
 }
 
 .CnCs li a img {
-  display: block;
+
 }
 .CnCs li a:hover img {
   transform: scale(1.5);
