@@ -42,12 +42,16 @@ nav li:not(:last-child) {
   font-size: 15px;
   margin: 5px;
   color: #8FC1E3;
+  font-weight: bold;
 }
 
 .Navbtn:hover{
-
   color: #7da8c5;
+}
 
+.Navbtn::before{
+background: #8FC1E3;
+transition: 0.8s;
 }
 
 /* shared Content Styles */
