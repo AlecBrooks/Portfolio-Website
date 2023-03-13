@@ -232,6 +232,7 @@ input[type="submit"]:hover {
 
 .Navbtn:hover{
   color: #7da8c5;
+  background: #8FC1E3;
 }
 
 .Navbtn::before{
