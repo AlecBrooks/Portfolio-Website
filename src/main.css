@@ -176,8 +176,8 @@ list-style: none;
 
 .socialLinks li a {
 position: relative;
-width: 80px;
-height: 80px;
+width: 60px;
+height: 60px;
 display: flex;
 justify-content: center;
 align-items: center;
