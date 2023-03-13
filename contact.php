@@ -15,7 +15,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="www.brooksdev.org">Back</a></li>
+                <li><a href="/index.html">Back</a></li>
             </ul>
         </nav>
     </header>
