@@ -202,9 +202,9 @@ input[type="submit"]:hover {
 nav ul {
   list-style: none;
   display: flex;
-  
-  margin: 5px;
-  padding: 5px;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav li {
