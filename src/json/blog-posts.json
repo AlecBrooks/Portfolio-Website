@@ -1,7 +1,7 @@
 {
   "blogPosts": [
     {
-      "title": "Beautiful Sunset",
+      "title": "Title of Blog Post",
       "datePublished": "2022-08-15",
       "content": [
         "As a data analyst, I'm always looking for ways to understand customer behavior and improve engagement. In this project, I analyzed data from social media platforms to explore the impact of social media on customer engagement. I collected data from Facebook, Twitter, and Instagram for a leading fashion brand, and used various statistical techniques to identify trends and patterns.",
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "title": "Cute Animals",
+      "title": "Title of Blog Post",
       "datePublished": "2022-09-01",
       "content": [
         "As online shopping continues to grow in popularity, it is important for retailers to stay up-to-date with the latest trends in order to remain competitive. In this project, I analyzed a dataset of online shopping transactions to identify patterns and trends in consumer behavior.",
