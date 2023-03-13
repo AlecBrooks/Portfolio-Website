@@ -40,11 +40,11 @@
         </ul>
     </main>
     <!-- Footer -->
-    <footer>
-		Alec@brooksdev.org<br></br>
-		powered by notepad.exe
-		<p>&copy; 2023 Alec Brooks. All rights reserved.</p>
-	</footer>
+    <div class="footer">
+    	Alec@brooksdev.org<br></br>
+    	powered by notepad.exe
+    	<p>&copy; 2023 Alec Brooks. All rights reserved.</p>
+	</div>
 </body>
 
 <script type="text/javascript">
