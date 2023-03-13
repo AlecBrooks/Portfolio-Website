@@ -1,7 +1,7 @@
 {
-  "photoPosts": [
+  "blogPosts": [
     {
-      "blogPosts": "Beautiful Sunset",
+      "title": "Beautiful Sunset",
       "datePublished": "2022-08-15",
       "content": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "blogPosts": "Cute Animals",
+      "title": "Cute Animals",
       "datePublished": "2022-09-01",
       "content": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
