@@ -14,5 +14,6 @@ function embedHTML() {
       }
     };
     xhr.send();
+    console.log("Pulled");
   }
   embedHTML();
