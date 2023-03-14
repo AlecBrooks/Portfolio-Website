@@ -55,7 +55,7 @@ function highlightNav() {
     navItems[i].style.pointerEvents = "auto";
   }
 
-  NavItem.style.color = "#8FC1E3";
+  NavItem.style.color = "#8FC1E3 !important";
   NavItem.style.borderBottom = "3px solid #8FC1E3";
   NavItem.style.pointerEvents = "none";
 }
