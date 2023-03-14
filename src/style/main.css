@@ -71,6 +71,7 @@ nav button {
   width: 100%;
   max-width: 290px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 nav button:hover{
