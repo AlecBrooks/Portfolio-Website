@@ -6,6 +6,7 @@ function Pages(url) {
      PageVariable(url);
      embedHTML();
      highlightNav();
+     console.log(localStorage.getItem("PageVar"))
 }
 
 function PageVariable(url) {
