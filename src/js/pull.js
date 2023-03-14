@@ -36,6 +36,12 @@ function embedHTML() {
 
 function highlightNav() {
   if (localStorage.getItem("PageVar") === '/src/pages/Intro.html') {
+    const navItems = document.querySelectorAll("#NavButtons li");
+    
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].style.borderBottom = "0px solid #8FC1E3";
+    }
+    
     const firstNavItem = document.querySelector("#NavButtons li:first-child");
     firstNavItem.style.color = "#8FC1E3";
     firstNavItem.style.borderBottom = "3px solid #8FC1E3";
