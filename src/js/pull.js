@@ -39,37 +39,22 @@ function highlightNav() {
   let NavItem;
 
   if (localStorage.getItem("PageVar") === '/src/pages/Intro.html') {
-    for (let i = 0; i < navItems.length; i++) {
-      navItems[i].style.borderBottom = "0px solid #8FC1E3";
-      navItems[i].style.pointerEvents = "auto";
-    }
-
     NavItem = document.querySelector("#NavButtons li:first-child");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Analysis.html') {
-    for (let i = 0; i < navItems.length; i++) {
-      navItems[i].style.borderBottom = "0px solid #8FC1E3";
-      navItems[i].style.pointerEvents = "auto";
-    }
-
     NavItem = document.querySelector("#NavButtons li:nth-child(2)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Design.html') {
-    for (let i = 0; i < navItems.length; i++) {
-      navItems[i].style.borderBottom = "0px solid #8FC1E3";
-      navItems[i].style.pointerEvents = "auto";
-    }
-
     NavItem = document.querySelector("#NavButtons li:nth-child(3)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Programing.html') {
-    for (let i = 0; i < navItems.length; i++) {
-      navItems[i].style.borderBottom = "0px solid #8FC1E3";
-      navItems[i].style.pointerEvents = "auto";
-    }
-
     NavItem = document.querySelector("#NavButtons li:nth-child(4)");
   } else {
     return;
   }
-  
+
+  for (let i = 0; i < navItems.length; i++) {
+    navItems[i].style.borderBottom = "0px solid #8FC1E3";
+    navItems[i].style.pointerEvents = "auto";
+  }
+
   NavItem.style.color = "#8FC1E3";
   NavItem.style.borderBottom = "3px solid #8FC1E3";
   NavItem.style.pointerEvents = "none";
