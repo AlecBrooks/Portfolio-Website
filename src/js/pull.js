@@ -39,6 +39,7 @@ function highlightNav() {
     const navItems = document.querySelectorAll("#NavButtons li");
     for (let i = 0; i < navItems.length; i++) {
       navItems[i].style.borderBottom = "0px solid #8FC1E3";
+      navItems[i].style.pointerEvents = "true";
     }
     
     const NavItem = document.querySelector("#NavButtons li:first-child");
