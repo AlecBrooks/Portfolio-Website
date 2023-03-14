@@ -35,7 +35,8 @@ function embedHTML() {
 }
 
 function highlightNav() {
-  const navItems = document.querySelectorAll("#NavButtons li");
+  console.log(localStorage.getItem("PageVar"));
+  const NavItems = document.querySelectorAll("#NavButtons li");
   let NavItem;
 
   if (localStorage.getItem("PageVar") === '/src/pages/Intro.html') {
@@ -44,21 +45,22 @@ function highlightNav() {
     NavItem = document.querySelector("#NavButtons li:nth-child(2)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Design.html') {
     NavItem = document.querySelector("#NavButtons li:nth-child(3)");
-  } else if (localStorage.getItem("PageVar") === '/src/pages/Programing.html') {
+  } else if (localStorage.getItem("PageVar") === '/src/pages/Programming.html') {
     NavItem = document.querySelector("#NavButtons li:nth-child(4)");
   } else {
     return;
   }
 
-  for (let i = 0; i < navItems.length; i++) {
-    navItems[i].style.borderBottom = "0px solid #8FC1E3";
-    navItems[i].style.pointerEvents = "auto";
+  for (let i = 0; i < NavItems.length; i++) {
+    NavItems[i].style.borderBottom = "0px solid #8FC1E3";
+    NavItems[i].style.pointerEvents = "auto";
   }
 
-  NavItem.style.color = "#8FC1E3 !important";
+  NavItem.style.color = "#8FC1E3";
   NavItem.style.borderBottom = "3px solid #8FC1E3";
   NavItem.style.pointerEvents = "none";
 }
+
 
 
 
