@@ -204,14 +204,16 @@ transition: 0.5s;
   border: 0px solid rgba(0, 0, 0, 0.1);
 }
 
-
+.socialLinks li:nth-child(1) a:hover {
+  color: #0077b5;
+}
 
 .socialLinks li:nth-child(2) a:hover {
-  color: #800080;
+  color: #1DA1F2;
 }
 
 .socialLinks li:nth-child(3) a:hover {
-  color: #0077b5;
+  color: #800080;
 }
 
 .socialLinks li:nth-child(4) a:hover {
