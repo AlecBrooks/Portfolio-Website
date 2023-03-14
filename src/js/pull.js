@@ -52,6 +52,20 @@ function highlightNav() {
     }
 
     NavItem = document.querySelector("#NavButtons li:nth-child(2)");
+  } else if (localStorage.getItem("PageVar") === '/src/pages/Design.html') {
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].style.borderBottom = "0px solid #8FC1E3";
+      navItems[i].style.pointerEvents = "auto";
+    }
+
+    NavItem = document.querySelector("#NavButtons li:nth-child(3)");
+  } else if (localStorage.getItem("PageVar") === '/src/pages/Programming.html') {
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].style.borderBottom = "0px solid #8FC1E3";
+      navItems[i].style.pointerEvents = "auto";
+    }
+
+    NavItem = document.querySelector("#NavButtons li:nth-child(4)");
   } else {
     // Code to execute if neither condition is true
     return;
