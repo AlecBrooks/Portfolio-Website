@@ -31,6 +31,7 @@ function embedHTML() {
   xhr.send();
   let myVariable = localStorage.getItem('PageVar');
   localStorage.removeItem('PageVar');
+  localStorage.setItem("PageVar", url);
 }
 
 function highlightNav() {
