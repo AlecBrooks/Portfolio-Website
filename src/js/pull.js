@@ -39,12 +39,25 @@ function highlightNav() {
     const navItems = document.querySelectorAll("#NavButtons li");
     for (let i = 0; i < navItems.length; i++) {
       navItems[i].style.borderBottom = "0px solid #8FC1E3";
-      navItems[i].style.pointerEvents = "true";
+      NavItem.style.pointerEvents = "auto";
     }
     
     const NavItem = document.querySelector("#NavButtons li:first-child");
     NavItem.style.color = "#8FC1E3";
     NavItem.style.borderBottom = "3px solid #8FC1E3";
     NavItem.style.pointerEvents = "none";
+  } else if (localStorage.getItem("PageVar") === '/src/pages/Analysis.html') {
+    const navItems = document.querySelectorAll("#NavButtons li");
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].style.borderBottom = "0px solid #8FC1E3";
+      NavItem.style.pointerEvents = "auto";
+    }
+    
+    const NavItem = document.querySelector("#NavButtons li:second-child");
+    NavItem.style.color = "#8FC1E3";
+    NavItem.style.borderBottom = "3px solid #8FC1E3";
+    NavItem.style.pointerEvents = "none";
+  } else {
+    // Code to execute if neither condition is true
   }
 }
