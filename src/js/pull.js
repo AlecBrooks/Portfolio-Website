@@ -4,8 +4,8 @@ function Pages(url) {
 
 
      PageVariable(url);
-     console.log(localStorage.getItem("PageVar"));
      embedHTML();
+     highlightNav();
 }
 
 function PageVariable(url) {
@@ -30,4 +30,12 @@ function embedHTML() {
   xhr.send();
   let myVariable = localStorage.getItem('PageVar');
   localStorage.removeItem('PageVar');
+}
+
+function highlightNav() {
+  if (localStorage.getItem("PageVar") === '/src/pages/Intro.html') {
+    const firstNavItem = document.querySelector("#NavButtons li:first-child");
+    firstNavItem.style.color = "#8FC1E3";
+    firstNavItem.style.borderBottom = "3px solid #8FC1E3";
+  }
 }
