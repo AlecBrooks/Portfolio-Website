@@ -74,7 +74,7 @@ nav button {
   text-align: center;
 }
 
-nav button:hover{
+/*nav button:hover{
   border-bottom: 3px solid #8FC1E3;
   color: #7da8c5;
   font-size: 17px;
@@ -86,7 +86,7 @@ nav button::before{
 background: #8FC1E3;
 z-index: -1;
 transition: 0.8s;
-}
+}*/
 
 /* shared Content Styles */
 main {
