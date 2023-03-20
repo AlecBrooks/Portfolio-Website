@@ -74,20 +74,6 @@ nav button {
   text-align: center;
 }
 
-/*nav button:hover{
-  border-bottom: 3px solid #8FC1E3;
-  color: #7da8c5;
-  font-size: 17px;
-  transform: translateY(-10px);
-  transition: 0.5s;
-}
-
-nav button::before{
-background: #8FC1E3;
-z-index: -1;
-transition: 0.8s;
-}*/
-
 /* shared Content Styles */
 main {
   max-width: 1500px;
@@ -210,18 +196,14 @@ transition: 0.5s;
 }
 
 .socialLinks li:nth-child(2) a:hover {
-  color: #1DA1F2;
-}
-
-.socialLinks li:nth-child(3) a:hover {
   color: #E8762D;
 }
 
-.socialLinks li:nth-child(4) a:hover {
+.socialLinks li:nth-child(3) a:hover {
   color: #800080;
 }
 
-.socialLinks li:nth-child(5) a:hover {
+.socialLinks li:nth-child(4) a:hover {
   color: #333;
 }
 
