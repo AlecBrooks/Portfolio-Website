@@ -196,14 +196,18 @@ transition: 0.5s;
 }
 
 .socialLinks li:nth-child(2) a:hover {
-  color: #E8762D;
-}
-
-.socialLinks li:nth-child(3) a:hover {
   color: #800080;
 }
 
+.socialLinks li:nth-child(3) a:hover {
+  color: #20BEFF;
+}
+
 .socialLinks li:nth-child(4) a:hover {
+  color: #E8762D;
+}
+
+.socialLinks li:nth-child(5) a:hover {
   color: #333;
 }
 
