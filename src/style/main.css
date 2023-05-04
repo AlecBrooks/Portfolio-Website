@@ -214,7 +214,7 @@ transition: 0.5s;
   .CnCs img {
   position: relative;
   display: flex;
-  margin: 0 10px;
+  margin: 5px;
   transition: 0.7s;
   }
   
@@ -222,7 +222,6 @@ transition: 0.5s;
     transform:scale(1.1);
   }
   
-
 /*Footer Style*/
 .footer {
   background-color: #F8F8F8;
