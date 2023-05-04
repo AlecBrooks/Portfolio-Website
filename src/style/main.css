@@ -209,12 +209,12 @@ transition: 0.5s;
   color: #333;
 }
 
-.CnC {
+.CnCs {
   position: relative;
   list-style: none;
   }
   
-  .CnC img {
+  .CnCs img {
   position: relative;
   width: 50px;
   height: 50px;
@@ -232,7 +232,7 @@ transition: 0.5s;
   transition: 0.5s;
   }
   
-  .CnC img:hover {
+  .CnCs img:hover {
     color: #999;
     transform: translateY(-20px);
     box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
@@ -240,7 +240,7 @@ transition: 0.5s;
     font-size: 25px;
   }
   
-  .CnC img:before {
+  .CnCs img:before {
     content: '';
     position: absolute;
     top: 10px;
