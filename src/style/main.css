@@ -222,12 +222,12 @@ transition: 0.5s;
   background: #fff;
   margin: 0 10px;
   transition: 0.5s;
-  border: 0.5px solid #8FC1E3;
+  border: 0.1px solid #8FC1E3;
   }
   
   .CnCs img:hover {
     transform:scale(1.1);
-    border: 1 px solid #8FC1E3;
+    border: 1.5 px solid #8FC1E3;
   }
   
   .CnCs img:before {
