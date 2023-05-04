@@ -216,12 +216,10 @@ transition: 0.5s;
   display: flex;
   margin: 0 10px;
   transition: 0.7s;
-  border: 0.1px solid #8FC1E3;
   }
   
   .CnCs img:hover {
     transform:scale(1.1);
-    border: 1.5 px solid #8FC1E3;
   }
   
 
