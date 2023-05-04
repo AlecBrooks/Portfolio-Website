@@ -226,7 +226,6 @@ transition: 0.5s;
   
   .CnCs img:hover {
     color: #999;
-    transform: translateY(-20px);
     transform:scale(1.1);
   }
   
