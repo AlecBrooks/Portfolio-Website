@@ -126,7 +126,7 @@ main.introPage {
 main.introPage img {
   padding: 10px;
   max-width: 200px;
-  margin-right: 40px;
+  margin: 10px;
   float: left;
 }
 
