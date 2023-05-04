@@ -180,6 +180,12 @@ transition: 0.5s;
   font-size: 25px;
 }
 
+.CnCs a:hover {
+
+  transform: translateY(-20px);
+
+}
+
 .socialLinks li a:before {
   content: '';
   position: absolute;
