@@ -180,7 +180,8 @@ transition: 0.5s;
 }
 
 .CnCs img:hover {
-
+  justify-content: center;
+  display: flex;
   transform: translateY(-20px);
   position: relative;
 }
