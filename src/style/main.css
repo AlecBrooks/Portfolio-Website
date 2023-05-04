@@ -114,9 +114,8 @@ p {
 /*introPage*/
 main.introPage {
   margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 50px;
+  margin: 20px;
+  padding: 30px;
   background-color: #F8F8F8;
   border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
