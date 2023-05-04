@@ -235,17 +235,6 @@ transition: 0.5s;
   border: 1px solid #8FC1E3;
 }
 
-.CnCs img:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border-radius: 50%;
-  border: 0px solid rgba(0, 0, 0, 0.1);
-}
-
 /*Footer Style*/
 .footer {
   background-color: #F8F8F8;
