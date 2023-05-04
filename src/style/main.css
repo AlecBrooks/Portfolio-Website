@@ -209,10 +209,7 @@ transition: 0.5s;
   color: #333;
 }
 
-.CnCs {
-  position: relative;
-  list-style: none;
-  }
+
   
   .CnCs img {
   position: relative;
@@ -230,7 +227,6 @@ transition: 0.5s;
     border: 1.5 px solid #8FC1E3;
   }
   
- 
 
 /*Footer Style*/
 .footer {
