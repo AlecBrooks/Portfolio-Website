@@ -212,6 +212,7 @@ transition: 0.5s;
 .CnCs {
   position: relative;
   list-style: none;
+  padding-bottom: 10px;
   }
 
 .CnCs img {
