@@ -209,14 +209,9 @@ transition: 0.5s;
   color: #333;
 }
 
-
-  
   .CnCs img {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
   margin: 0 10px;
   transition: 0.7s;
   border: 0.1px solid #8FC1E3;
