@@ -5,3 +5,7 @@ nav ul {
     margin: 0px;
     padding: 0px;
 }
+
+nav button {
+    text-align: left;
+}
