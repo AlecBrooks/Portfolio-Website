@@ -73,6 +73,22 @@ nav button {
   text-align: center;
 }
 
+nav a {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 5px;
+  color: #333333;
+  font-weight: bold;
+  transition: 0.8;
+  cursor: pointer;
+  width: 100%;
+  max-width: 290px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 /* shared Content Styles */
 main {
   max-width: 1500px;
