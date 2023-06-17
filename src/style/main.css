@@ -291,7 +291,7 @@ transition: 0.5s;
 
 .dot {
   border: none;
-  background: rgba(0, 0, 0, 0.2);
+  background: #3D7190;
   width: 20px;
   height: 20px;
   margin: 5px;
@@ -299,8 +299,8 @@ transition: 0.5s;
   outline: none;
 }
 .dot:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: #8FC1E3;
 }
 .dot.active {
-  background: rgba(0, 0, 0, 0.5);
+  background: #8FC1E3;
 }
