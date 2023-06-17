@@ -277,7 +277,7 @@ transition: 0.5s;
   transition: ease 0.5s;
 }
 .display-area {
-  width: 100%
+  width: 100%;
 /*   border: 1px solid black; */
   overflow-x: hidden;
   margin: auto;
