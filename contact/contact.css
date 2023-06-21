@@ -29,6 +29,7 @@ form#contact-form {
   
   form#contact-form textarea {
     height: 150px;
+    resize: none;
   }
   
   form#contact-form button[type="submit"] {
