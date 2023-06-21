@@ -10,29 +10,16 @@ function sendForm(event) {
     var timestamp = new Date().toISOString(); // Get the current timestamp
   
     var payload = {
+      content: `Name`,
+      tts: false,
       embeds: [
         {
-          title: 'New message received from the contact form',
-          fields: [
-            {
-              name: 'Name',
-              value: name
-            },
-            {
-              name: 'Email',
-              value: email
-            },
-            {
-              name: 'Subject',
-              value: subject
-            },
-            {
-              name: 'Message',
-              value: message
-            }
-          ],
+          type: 'rich',
+          title: `Subject`,
+          description: `Message`,
+          color: 0x00FFFF,
           footer: {
-            text: 'You have received a new message!'
+            text: `email`
           },
           timestamp: timestamp // Set the timestamp to the current time
         }
@@ -60,7 +47,7 @@ function sendForm(event) {
         // Error handling for network or other issues
         showNotification('Failed to send message.');
       });
-  }  
+  }
   
   function showNotification(message) {
     var notification = document.getElementById('notification');
