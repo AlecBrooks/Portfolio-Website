@@ -9,7 +9,7 @@ function sendForm() {
     console.log('Subject:', subject);
     console.log('Message:', message);
   
-    var webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
+    var webhookUrl = 'https://discord.com/api/webhooks/1121026381283864657/GTJ1LIgD34Q5OPwRtPgrfUcOGkfEGq6N5AO4QAPI8dib1t-Hg0FSteUyzKBQPGnc9B2A';
     var payload = {
       content: `
         New message received from the contact form:
