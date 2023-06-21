@@ -41,6 +41,8 @@ form#contact-form {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
   }
   
   form#contact-form button[type="submit"]:hover {
