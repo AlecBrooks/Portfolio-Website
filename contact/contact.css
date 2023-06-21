@@ -1,4 +1,11 @@
-/* Contact Form */
+
+
+.contactTitle {
+
+    color: aquamarine;
+
+}
+
 form#contact-form {
     max-width: 500px;
     margin: 0 auto;
