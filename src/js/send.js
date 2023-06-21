@@ -15,7 +15,7 @@ function sendForm(event) {
         {
           type: 'rich',
           title: subject,
-          description: message,
+          description: `-----\n${message}\n-----`,
           color: 0x00FFFF,
           footer: {
             text: `From: ${email}` // Display "From: Name" in the footer
