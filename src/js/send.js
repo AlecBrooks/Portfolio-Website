@@ -7,6 +7,8 @@ function sendForm(event) {
     var message = document.getElementById('message').value;
   
     var webhookUrl = 'https://discord.com/api/webhooks/1121026381283864657/GTJ1LIgD34Q5OPwRtPgrfUcOGkfEGq6N5AO4QAPI8dib1t-Hg0FSteUyzKBQPGnc9B2A';
+    var timestamp = new Date().toISOString(); // Get the current timestamp
+  
     var payload = {
       embeds: [
         {
@@ -31,7 +33,8 @@ function sendForm(event) {
           ],
           footer: {
             text: 'You have received a new message!'
-          }
+          },
+          timestamp: timestamp // Set the timestamp to the current time
         }
       ]
     };
@@ -57,7 +60,7 @@ function sendForm(event) {
         // Error handling for network or other issues
         showNotification('Failed to send message.');
       });
-  }
+  }  
   
   function showNotification(message) {
     var notification = document.getElementById('notification');
