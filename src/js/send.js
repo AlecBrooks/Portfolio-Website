@@ -19,9 +19,9 @@ function sendForm(event) {
           description: formattedMessage,
           color: 0x00FFFF,
           footer: {
-            text: `From: ${email}` // Display "From: Name" in the footer
+            text: `From: ${email}`
           },
-          timestamp: timestamp // Set the timestamp to the current time
+          timestamp: timestamp
         }
       ]
     };
