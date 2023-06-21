@@ -2,7 +2,7 @@
 	<main>
 		<title>Contact me | Alec Brooks</title>
 		<h1>Contact Me</h1>
-		<form id="contact-form">	
+		<form id="contact-form">
 			<div class="form-group">
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email" required>
@@ -15,13 +15,10 @@
 				<label for="message">Message</label>
 				<textarea name="message" id="message" rows="5" required></textarea>
 			</div>
-			
-			<!-- CAPTCHA -->
-			<div class="form-group">
-				<label for="captcha">Please prove you're not a robot:</label>
-				<input type="text" name="captcha" id="captcha" required>
-			</div>
-			
+
+			<!-- Add the reCAPTCHA widget -->
+			<div class="g-recaptcha" data-sitekey="6Lc1hvokAAAAADpWpO6GFm1qbY4j0tqRyC9LOVTD"></div>
+
 			<button type="submit" onclick="sendForm(event)">Send Message</button>
 		</form>
 		<div id="notification"></div>
