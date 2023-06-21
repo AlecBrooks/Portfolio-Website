@@ -1,7 +1,6 @@
 function sendForm(event) {
     event.preventDefault();
   
-    var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var subject = document.getElementById('subject').value;
     var message = document.getElementById('message').value;
@@ -19,7 +18,7 @@ function sendForm(event) {
           description: message,
           color: 0x00FFFF,
           footer: {
-            text: `From: ${name}` // Display "From: Name" in the footer
+            text: `From: ${email}` // Display "From: Name" in the footer
           },
           timestamp: timestamp // Set the timestamp to the current time
         }
@@ -60,7 +59,6 @@ function sendForm(event) {
   }
   
   function clearForm() {
-    document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('subject').value = '';
     document.getElementById('message').value = '';
