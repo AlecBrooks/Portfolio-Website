@@ -348,7 +348,7 @@ margin-bottom: 50px;
 .iframe-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Assuming a 16:9 aspect ratio, adjust as needed */
+  padding-bottom: 56.25%;
 }
 
 .iframe-container iframe {
