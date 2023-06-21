@@ -22,6 +22,7 @@ form#contact-form {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
   }
   
   form#contact-form input[type="text"],
