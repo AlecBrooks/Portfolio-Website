@@ -10,16 +10,16 @@ function sendForm(event) {
     var timestamp = new Date().toISOString(); // Get the current timestamp
   
     var payload = {
-      content: `Name`,
+      content: '', // Empty content, as we will include the fields in the embed object
       tts: false,
       embeds: [
         {
           type: 'rich',
-          title: `Subject`,
-          description: `Message`,
+          title: subject,
+          description: message,
           color: 0x00FFFF,
           footer: {
-            text: `email`
+            text: `From: ${name}` // Display "From: Name" in the footer
           },
           timestamp: timestamp // Set the timestamp to the current time
         }
@@ -48,6 +48,7 @@ function sendForm(event) {
         showNotification('Failed to send message.');
       });
   }
+  
   
   function showNotification(message) {
     var notification = document.getElementById('notification');
