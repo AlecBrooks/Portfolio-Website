@@ -8,14 +8,32 @@ function sendForm(event) {
   
     var webhookUrl = 'https://discord.com/api/webhooks/1121026381283864657/GTJ1LIgD34Q5OPwRtPgrfUcOGkfEGq6N5AO4QAPI8dib1t-Hg0FSteUyzKBQPGnc9B2A';
     var payload = {
-      content: `**New message received from the contact form:**
-  **Name:** ${name}
-  **Email:** ${email}
-  **Subject:** ${subject}
-  **Message:** 
-  \`\`\`
-  ${message}
-  \`\`\``
+      embeds: [
+        {
+          title: 'New message received from the contact form',
+          fields: [
+            {
+              name: 'Name',
+              value: name
+            },
+            {
+              name: 'Email',
+              value: email
+            },
+            {
+              name: 'Subject',
+              value: subject
+            },
+            {
+              name: 'Message',
+              value: message
+            }
+          ],
+          footer: {
+            text: 'You have received a new message!'
+          }
+        }
+      ]
     };
   
     fetch(webhookUrl, {
