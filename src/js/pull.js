@@ -47,6 +47,8 @@ function highlightNav() {
     NavItem = document.querySelector("#NavButtons li:nth-child(3)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Programming.html') {
     NavItem = document.querySelector("#NavButtons li:nth-child(4)");
+  } else if (localStorage.getItem("PageVar") === '/src/pages/ContactMe.html') {
+    NavItem = document.querySelector("#NavButtons li:nth-child(5)");
   } else {
     return;
   }
