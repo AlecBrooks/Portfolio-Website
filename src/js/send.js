@@ -6,16 +6,17 @@ function sendForm(event) {
     var message = document.getElementById('message').value;
   
     var webhookUrl = 'https://discord.com/api/webhooks/1121026381283864657/GTJ1LIgD34Q5OPwRtPgrfUcOGkfEGq6N5AO4QAPI8dib1t-Hg0FSteUyzKBQPGnc9B2A';
-    var timestamp = new Date().toISOString(); // Get the current timestamp
+    var timestamp = new Date().toISOString();
+    var formattedMessage = `**Message**:\n\n${message}`;
   
     var payload = {
-      content: '', // Empty content, as we will include the fields in the embed object
+      content: '',
       tts: false,
       embeds: [
         {
           type: 'rich',
           title: subject,
-          description: `-----\n${message}\n-----`,
+          description: formattedMessage,
           color: 0x00FFFF,
           footer: {
             text: `From: ${email}` // Display "From: Name" in the footer
