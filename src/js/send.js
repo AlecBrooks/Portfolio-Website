@@ -1,20 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Code to be executed after the DOM is fully loaded
+function sendForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
   
-    var contactForm = document.getElementById("contact-form");
-    contactForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-    
-      // Get form values
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var subject = document.getElementById("subject").value;
-      var message = document.getElementById("message").value;
-    
-      // Display form values
-      console.log("Name: " + name);
-      console.log("Email: " + email);
-      console.log("Subject: " + subject);
-      console.log("Message: " + message);
-    });
-  });
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Subject:', subject);
+    console.log('Message:', message);
+  
+    // You can add further code here to process or display the form data as needed
+  }
