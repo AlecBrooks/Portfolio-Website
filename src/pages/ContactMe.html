@@ -1,4 +1,3 @@
-
 <div id="MyContent">
 	<main>
 		<title>Contact me | Alec Brooks</title>
@@ -16,6 +15,13 @@
 				<label for="message">Message</label>
 				<textarea name="message" id="message" rows="5" required></textarea>
 			</div>
+			
+			<!-- CAPTCHA -->
+			<div class="form-group">
+				<label for="captcha">Please prove you're not a robot:</label>
+				<input type="text" name="captcha" id="captcha" required>
+			</div>
+			
 			<button type="submit" onclick="sendForm(event)">Send Message</button>
 		</form>
 		<div id="notification"></div>
