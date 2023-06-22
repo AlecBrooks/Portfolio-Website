@@ -41,14 +41,12 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 	<script>
 		function highlightContent() {
-			console.log("hljs.highlightAll() executed.");
 			hljs.highlightAll();
+			console.log("hljs.highlightAll() executed.");
 		}
-	
+
 		window.onload = function() {
-			Pages('/src/pages/Intro.html', function() {
-				highlightContent();
-			});
+			Pages('/src/pages/Intro.html', highlightContent);
 		};
 	</script>
 </body>
