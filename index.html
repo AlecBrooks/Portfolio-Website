@@ -29,34 +29,6 @@
 				<!--CONTENT-->
 				</div>
   			</div>
-
-			  <pre>
-				<code>
-			Function Encrypt(crypt_in As String)
-			Dim c, f, i As Integer             
-			For i = 1 To Len(crypt_in)
-			c = Asc(Mid(crypt_in, i, 1))             
-			If c >= 97 And c <= 122 Then
-			f = 97
-			ElseIf c >= 65 And c <= 90 Then
-			f = 65
-			Else
-			GoTo Build
-			End If                
-			c = 13 + c - f
-			Do
-			c = c Mod 26
-			Loop While c > (26 - 1)               
-			c = c + f                 
-			Build:
-			ROT = ROT & Chr(c)
-			Next i             
-			crypt_in = ROT
-			End Function
-				</code>
-			</pre>
-
-
 	<div class="footer">
     	Alec@brooksdev.org<br></br>
     	powered by notepad.exe
