@@ -355,8 +355,8 @@ margin-bottom: 50px;
 code.code-block {
   border: 1px solid #8FC1E3; /* Update border color */
   border-radius: 5px;
-  padding: 10px;
-  font-size: 16px;
+  padding: 5px;
+  font-size: 15px;
   line-height: 1.5;
   overflow-x: auto;
   white-space: pre-wrap;
