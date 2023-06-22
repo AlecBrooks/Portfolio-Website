@@ -360,8 +360,6 @@ pre.code-block {
   line-height: 1.5;
   overflow-x: auto;
   white-space: pre-wrap;
-}
-
-.pre code {
-  display: block;
+  display: inline-block; /* Set display to inline-block */
+  max-width: 100%; /* Add max-width property */
 }
