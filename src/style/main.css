@@ -346,3 +346,22 @@ margin: 0 auto;
 margin-top: 50px;
 margin-bottom: 50px;
 }
+
+/* code-block */
+
+.pre code,
+pre.code-block {
+  background-color: #ECEFF1; /* Update background color to a slightly darker shade */
+  color: #333333; /* Update text color */
+  border: 1px solid #8FC1E3; /* Update border color */
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  display: inline-block; /* Set display to inline-block */
+  max-width: 100%; /* Add max-width property */
+  text-align: left; /* Align text to the left */
+}
