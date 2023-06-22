@@ -349,8 +349,10 @@ margin-bottom: 50px;
 
 /* code-block */
 
-.pre code,
-pre.code-block {
+
+
+.code code,
+code.code-block {
   background-color: #ECEFF1; /* Update background color to a slightly darker shade */
   color: #333333; /* Update text color */
   border: 1px solid #8FC1E3; /* Update border color */
