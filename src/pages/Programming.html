@@ -6,7 +6,7 @@
         <ul id="blog-post-list" class="blog-post-list">
             <li class="post">
                 <h2>Cube Runner: A VBA Game Project</h2>
-                <p>6/8/2023</p>
+                <p>6/22/2023</p>
                 <p>Back in late 2021 during my early stages of learning VBA (Visual Basic for Applications), I took on a side project called Cube Runner to further develop my skills. Cube Runner is a game created using VBA and user forms within Microsoft Excel. This project allowed me to apply my knowledge, challenge myself, and showcase my progress. Here is an overview of the project.</p>
                 <p></p><a href="/src/images/demos/QubeRunner_Demo.gif" target="_blank"><img src="/src/images/demos/QubeRunner_Demo.gif" alt="Cube Runner Game Demo" style="float: left; margin-right: 10px; max-width: 500px; max-height: 500px;"></a></p>
                 <h3>The Game Concept</h3>
@@ -18,6 +18,66 @@
                 <p>If you're interested in exploring Cube Runner or reviewing the source code, you can access the project on my GitHub repository: <a href="https://github.com/AlecBrooks/QubeRunner">Cube Runner on GitHub</a>. Simply download the repository and follow the provided instructions to run the game within Microsoft Excel.</p>
                 <h3>Conclusion</h3>
                 <p>Cube Runner served as a valuable project during my early VBA journey, allowing me to apply the VBA skills I learned and test my progress. While it may not be a particularly complex game, it represents a milestone in my programming journey. Feel free to visit the GitHub repository and experience Cube Runner firsthand!</p>
+            </li>
+            <li class="post">
+                <main class="post">
+                    <h2>SurvChat: An Overly Complicated Shared Drive Chat Program</h2>
+                    <p>6/8/2023</p>
+
+                    <p>Welcome to SurvChat, an excessively convoluted shared drive chat program built using VBA and Excel. SurvChat is a programming project that I undertook just for fun, embracing complexity in a purposeless manner. This blog post will take you through the unique features of SurvChat, including its encryption function, installation process, and overall experience.</p>
+                  
+                    <h3>The Encryption Function</h3>
+                    <p>SurvChat takes security to a whole new level with its client-side message encryption. The encryption function in VBA ensures that your messages remain secure and indecipherable to prying eyes. Here's a glimpse of the encryption function:</p>
+                  
+                    <pre><code>
+                  Function Encrypt(crypt_in As String)
+                      Dim c, f, i As Integer
+                      For i = 1 To Len(crypt_in)
+                          c = Asc(Mid(crypt_in, i, 1))
+                          If c >= 97 And c <= 122 Then
+                              f = 97
+                          ElseIf c >= 65 And c <= 90 Then
+                              f = 65
+                          Else
+                              GoTo Build
+                          End If
+                          c = 13 + c - f
+                          Do
+                              c = c Mod 26
+                          Loop While c > (26 - 1)
+                          c = c + f
+                  Build:
+                          ROT = ROT &amp; Chr(c)
+                      Next i
+                      crypt_in = ROT
+                  End Function
+                    </code></pre>
+                  
+                    <p>The above function applies a simple rotation (ROT) cipher to each character of the input message. It shifts the characters by a fixed number of positions, making the resulting text unintelligible without the decryption process.</p>
+                  
+                    <h4>Example of an Encrypted Conversation:</h4>
+                    <p>Here's a snippet of an encrypted conversation stored on the server:</p>
+                  
+                    <pre><code>
+                  Hfre1@QRFX - 03:16 PM &gt;  Hello World!
+                  Hfre2@QRFX - 03:16 PM &gt;  Hi!
+                    </code></pre>
+                  
+                    <h3>Accessing the Project/Installation</h3>
+                    <p>To get started with SurvChat, you can download the client and server from my GitHub repository: <a href="https://github.com/AlecBrooks/SurvTalk">https://github.com/AlecBrooks/SurvTalk</a>. The installation process involves storing the server folder on a shared network drive and the client folder locally.</p>
+                  
+                    <ol>
+                      <li>Download the client and server folders from the GitHub repository.</li>
+                      <li>Store the server folder on a shared network drive accessible to all users.</li>
+                      <li>Place the client folder on your local machine.</li>
+                      <li>Edit the Config File within the client folder to specify the location of the server folder.</li>
+                      <li>Set the admin password by modifying the server.conf file. SurvChat offers various administration commands that can be executed by a user with admin privileges by inputting the command "/chmod [admin password]." These commands enable actions such as creating and deleting new channels, kicking users from the server, and more. To explore the available commands, simply type "/help" in the chat.</li>
+                    </ol>
+                  
+                    <h3>Conclusion</h3>
+                    <p>SurvChat, the overly complicated shared drive chat program, presents a unique and ultimately purposeless approach to communication. With its VBA-powered Excel interface, encryption functions, and admin controls, SurvChat delivers a chat experience like no other. Whether you're seeking a bit of programming fun or simply enjoy embracing complexity, SurvChat is a project worth exploring.</p>
+                    <p>To embark on your SurvChat journey, visit the GitHub repository and dive into the deep world of LAN chat goodness that SurvChat can offer. Experience the thrill of secure, convoluted conversations with your friends and colleagues. Happy SurvChatting!</p>
+                    <p>Note: SurvChat is intended for recreational purposes only and should not be used for sensitive or confidential communication.</p>
             </li>
         </ul>
     </main>
