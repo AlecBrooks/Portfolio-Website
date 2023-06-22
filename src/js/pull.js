@@ -24,6 +24,7 @@ function embedHTML() {
     const currentMyContentElement = document.querySelector("#MyContent");
     if (myContentElement && currentMyContentElement) {
       currentMyContentElement.innerHTML = myContentElement.innerHTML;
+      highlightContent();
     } else {
       console.error("Could not find the #MyContent element in either the response HTML or the current document.");
     }
