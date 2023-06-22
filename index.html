@@ -44,9 +44,11 @@
 			console.log("hljs.highlightAll() executed.");
 			hljs.highlightAll();
 		}
-
+	
 		window.onload = function() {
-			Pages('/src/pages/Intro.html', highlightContent);
+			Pages('/src/pages/Intro.html', function() {
+				highlightContent();
+			});
 		};
 	</script>
 </body>
