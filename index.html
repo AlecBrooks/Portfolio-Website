@@ -37,15 +37,16 @@
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="/src/js/Particles/conf.js"></script>
 	<script src="/src/js/pull.js"></script>
-	<script>
-		window.onload = function() {
-			Pages('/src/pages/Intro.html')
-		};
-	</script>
 	<script src="/src/js/send.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 	<script>
-		hljs.highlightAll();
+		function highlightContent() {
+			hljs.highlightAll();
+		}
+
+		window.onload = function() {
+			Pages('/src/pages/Intro.html', highlightContent);
+		};
 	</script>
 </body>
 </html>
