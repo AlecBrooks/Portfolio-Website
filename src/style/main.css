@@ -348,7 +348,7 @@ margin-bottom: 50px;
 }
 
 /* Specific Code Block Styles */
-.code-block {
+pre code {
   display: block;
   padding: 10px;
   background-color: #F8F8F8;
@@ -361,45 +361,30 @@ margin-bottom: 50px;
   overflow: auto;
 }
 
-.code-block code {
-  margin: 0;
-}
-
-/* Apply Code Block Styles to pre and code tags within .code-block */
-.code-block pre code {
-  display: inline;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  box-shadow: none;
-}
-
 /* Syntax Highlighting Styles - Modify as per your color scheme */
-.code-block code span.keyword {
+pre code span.keyword {
   color: #0077b5;
   font-weight: bold;
 }
 
-.code-block code span.comment {
+pre code span.comment {
   color: #888888;
   font-style: italic;
 }
 
-.code-block code span.string {
+pre code span.string {
   color: #DD1144;
 }
 
-.code-block code span.number {
+pre code span.number {
   color: #008080;
 }
 
-.code-block code span.punctuation {
+pre code span.punctuation {
   color: #333333;
 }
 
-.code-block code span.operator {
+pre code span.operator {
   color: #333333;
   font-weight: bold;
 }
