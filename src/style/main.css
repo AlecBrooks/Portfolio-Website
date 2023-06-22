@@ -347,11 +347,13 @@ margin-top: 50px;
 margin-bottom: 50px;
 }
 
+/* code-block */
+
 .pre code,
 pre.code-block {
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  background-color: #F8F8F8; /* Update background color */
+  border: 1px solid #8FC1E3; /* Update border color */
+  border-radius: 5px;
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
