@@ -1,4 +1,4 @@
-import "./styles.css";
+import "styles.css";
 import "bootstrap";
 import "bootstrap-css";
 import EditorJS from "@editorjs/editorjs";
