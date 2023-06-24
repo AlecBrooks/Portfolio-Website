@@ -21,11 +21,11 @@
 					<div class="topnav">
 					  <a href="#" class="active">Logo</a>
 					  <div id="NavButtons">
-						<a href="javascript:void(0);" onclick="Pages('/src/pages/Intro.html'); Hamburger();">Intro</a>
-						<a href="javascript:void(0);" onclick="Pages('/src/pages/Analysis.html'); Hamburger();">Analysis</a>
-						<a href="javascript:void(0);" onclick="Pages('/src/pages/Design.html'); Hamburger();">Design</a>
-						<a href="javascript:void(0);" onclick="Pages('/src/pages/Programming.html'); Hamburger();">Programming</a>
-						<a href="javascript:void(0);" onclick="Pages('/src/pages/ContactMe.html'); Hamburger();">Contact me</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Intro.html');">Intro</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Analysis.html');">Analysis</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Design.html');">Design</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Programming.html');">Programming</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/ContactMe.html');">Contact me</a>
 					  </div>
 					  <a href="javascript:void(0);" class="icon" onclick="Hamburger()">
 						<i class="fa fa-bars"></i>
@@ -53,16 +53,12 @@
 				}
 				function Hamburger() {
 					var x = document.getElementById("NavButtons");
-					var hamburgerIcon = document.querySelector(".icon");
-
 					if (x.style.display === "block") {
 						x.style.display = "none";
-						hamburgerIcon.classList.remove("active");
 					} else {
 						x.style.display = "block";
-						hamburgerIcon.classList.add("active");
 					}
-					}
+				}
 				window.onload = function() {
 					Pages('/src/pages/Intro.html');
 				};
