@@ -406,20 +406,20 @@ form#contact-form {
   justify-content: center;
 }
 
-#staticCarousel {
+.staticCarousel {
   display: contents;
 }
 
-#staticCarousel ul {
+.staticCarousel ul {
   list-style: none;
 }
 
-#staticCarousel li {
+.staticCarousel li {
   display: inline-block;
   margin-right: 10px;
 }
 
-#staticCarousel img {
+.staticCarousel img {
   position: relative;
   display: flex;
   transition: 0.7s;
