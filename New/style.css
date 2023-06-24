@@ -252,7 +252,7 @@ background-color: #6FAEDB;
   background-color: #E8762D;
 }
 
-@media only screen and (min-width:500) {
+@media only screen and (min-width: 1000px) {
 
   .wrapper {
     width: 100%;
@@ -261,7 +261,7 @@ background-color: #6FAEDB;
   .mobile-container {
     display: none;
   }
-
+  
 }
 
 
