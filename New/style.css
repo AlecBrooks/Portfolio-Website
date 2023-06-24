@@ -262,6 +262,10 @@ background-color: #6FAEDB;
     display: none;
   }
 
+  .topnav {
+    display: none;
+  }
+
 }
 
 
