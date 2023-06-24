@@ -424,4 +424,10 @@ form#contact-form {
     transition: 0.5s;
   }
 
+  .post {
+      width: 15%;
+      padding: 20px;
+      float: left;
+  }
+
 }
