@@ -45,7 +45,7 @@ function highlightNav() {
   } else if (localStorage.getItem("PageVar") === '/src/pages/Analysis.html') {
     NavItem = document.querySelector("#NavButtons a:nth-child(2)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Design.html') {
-    NavItem = document.querySelector("#NavButtons a:nth-child(3)");
+    NavItem = document.querySelector("#NavButtons :nth-child(3)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Programming.html') {
     NavItem = document.querySelector("#NavButtons a:nth-child(4)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/ContactMe.html') {
@@ -57,6 +57,8 @@ function highlightNav() {
   for (let i = 0; i < NavItems.length; i++) {
     NavItems[i].style.borderBottom = "0px solid #8FC1E3";
     NavItems[i].style.pointerEvents = "auto";
+    NavItems[i].style.color = "#3D7190";
+
   }
 
   NavItem.style.color = "#8FC1E3";
