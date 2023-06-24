@@ -410,6 +410,15 @@ form#contact-form {
   display: contents;
 }
 
+#staticCarousel ul {
+  list-style: none;
+}
+
+#staticCarousel li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 #staticCarousel img {
   position: relative;
   display: flex;
