@@ -43,6 +43,11 @@ nav {
     padding: 0px;
   }
 
+  nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   nav button {
     border: none;
     background: none;
