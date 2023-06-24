@@ -411,6 +411,9 @@ form#contact-form {
   display: none
 }
 
+.myCarousel {
+  justify-content: center;
+}
 .img-carousel {
   width: 20%;
   justify-content: center;
