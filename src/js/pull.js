@@ -37,19 +37,19 @@ function embedHTML() {
 
 function highlightNav() {
   console.log(localStorage.getItem("PageVar"));
-  const NavItems = document.querySelectorAll("#NavButtons li");
+  const NavItems = document.querySelectorAll("#NavButtons a");
   let NavItem;
 
   if (localStorage.getItem("PageVar") === '/src/pages/Intro.html') {
-    NavItem = document.querySelector("#NavButtons li:first-child");
+    NavItem = document.querySelector("#NavButtons a:first-child");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Analysis.html') {
-    NavItem = document.querySelector("#NavButtons li:nth-child(2)");
+    NavItem = document.querySelector("#NavButtons a:nth-child(2)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Design.html') {
-    NavItem = document.querySelector("#NavButtons li:nth-child(3)");
+    NavItem = document.querySelector("#NavButtons a:nth-child(3)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/Programming.html') {
-    NavItem = document.querySelector("#NavButtons li:nth-child(4)");
+    NavItem = document.querySelector("#NavButtons a:nth-child(4)");
   } else if (localStorage.getItem("PageVar") === '/src/pages/ContactMe.html') {
-    NavItem = document.querySelector("#NavButtons li:nth-child(5)");
+    NavItem = document.querySelector("#NavButtons a:nth-child(5)");
   } else {
     return;
   }
