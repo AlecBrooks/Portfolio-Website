@@ -312,6 +312,12 @@ background-color: #6FAEDB;
     text-align: center;
   }
 
+  .post img{
+    width: 15%;
+    padding: 20px;
+    float: left;
+}
+
   .img-me {
     width: 15%;
     border-radius: 50%;
@@ -422,12 +428,6 @@ form#contact-form {
   .staticCarousel img:hover {
     transform:scale(1.1);
     transition: 0.5s;
-  }
-
-  .post {
-      width: 15%;
-      padding: 20px;
-      float: left;
   }
 
 }
