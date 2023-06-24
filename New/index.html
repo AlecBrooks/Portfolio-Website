@@ -25,6 +25,9 @@
 						<li><button onclick="Pages('/src/pages/Programming.html')">Programming</button></li>
 						<li><button onclick="Pages('/src/pages/ContactMe.html')">Contact me</button></li>
 					</ul>
+					<a href="javascript:void(0);" class="icon" onclick="Hamburger()">
+						<i class="fa fa-bars"></i>
+					</a>
 				</nav>
 			</header>
 			<div id="MyContent">
@@ -45,6 +48,16 @@
 					hljs.highlightAll();
 					console.log("hljs.highlightAll() executed.");
 				}
+				
+				function Hamburger() {
+					var x = document.getElementById("myLinks");
+					if (x.style.display === "block") {
+						x.style.display = "none";
+					} else {
+						x.style.display = "block";
+					}
+				}
+				
 				window.onload = function() {
 					Pages('/src/pages/Intro.html', highlightContent);
 				};
