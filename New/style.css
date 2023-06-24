@@ -416,4 +416,14 @@ form#contact-form {
   justify-content: center;
 }
 
+#staticCarousel img {
+  position: relative;
+  display: flex;
+  transition: 0.7s;
+  }
+  
+  #staticCarousel img:hover {
+    transform:scale(1.1);
+  }
+
 }
