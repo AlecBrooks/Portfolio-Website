@@ -28,7 +28,7 @@
 
 /*Nav Bar Style*/
 
-.desktop-container{
+.desktop-container {
   display: none;
 }
 
@@ -265,6 +265,10 @@ background-color: #6FAEDB;
 
   .mobile-container {
     display: none;
+  }
+
+  .desktop-container {
+    display: contents;
   }
   
 }
