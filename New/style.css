@@ -251,9 +251,9 @@ background-color: #6FAEDB;
 }
 
 .notification.success {
-  background-color: blue;
+  background-color: #6FAEDB;
 }
 
 .notification.error {
-  background-color: red;
+  background-color: #E8762D;
 }
