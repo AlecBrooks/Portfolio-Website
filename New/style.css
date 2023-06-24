@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 .wrapper {
@@ -45,7 +46,6 @@
   display: block;
   font-weight: bold;
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
 }
 
 .topnav a.icon {
