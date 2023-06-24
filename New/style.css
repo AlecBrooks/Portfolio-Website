@@ -33,7 +33,7 @@ header {
   box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-.NavButtons {
+.mobile-container {
   max-width: 480px;
   margin: auto;
   background-color: #555;
@@ -42,17 +42,17 @@ header {
   border-radius: 10px;
 }
 
-.NavButtons .topnav {
+.mobile-container .topnav {
   overflow: hidden;
   background-color: #333;
   position: relative;
 }
 
-.NavButtons #NavButtons {
+.mobile-container #NavButtons {
   display: none;
 }
 
-.NavButtons button {
+.mobile-container button {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -63,7 +63,7 @@ header {
   cursor: pointer;
 }
 
-.NavButtons button.icon {
+.mobile-container button.icon {
   background: black;
   display: block;
   position: absolute;
@@ -71,12 +71,12 @@ header {
   top: 0;
 }
 
-.NavButtons button:hover {
+.mobile-container button:hover {
   background-color: #ddd;
   color: black;
 }
 
-.NavButtons .active {
+.mobile-container .active {
   background-color: #04AA6D;
   color: white;
 }
