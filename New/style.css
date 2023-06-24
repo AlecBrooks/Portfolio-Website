@@ -408,9 +408,11 @@ form#contact-form {
 }
 
 .myCarousel {
+  display: none
+}
 
-  display: none;
-
+.img-carousel {
+  width: 20%;
 }
 
 }
