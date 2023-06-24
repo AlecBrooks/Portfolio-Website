@@ -414,7 +414,7 @@ form#contact-form {
 }
 
 .staticCarousel img {
-  width: 5%; /* Adjust the width of the images */
+  width: 500px; /* Adjust the width of the images */
   height: auto;
 }
   
