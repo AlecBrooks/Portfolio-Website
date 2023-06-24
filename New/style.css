@@ -406,26 +406,18 @@ form#contact-form {
 }
 
 .staticCarousel {
-  display: contents;
-}
-
-.staticCarousel ul {
+  display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .staticCarousel li {
-  display: inline-block;
+  flex: 0 0 auto;
   margin-right: 10px;
 }
 
 .staticCarousel img {
-  position: relative;
-  display: flex;
-  transition: 0.7s;
-  }
-  
-  #staticCarousel img:hover {
-    transform:scale(1.1);
-  }
-
+  width: 100px;
+  height: auto;
 }
