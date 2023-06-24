@@ -410,7 +410,7 @@ form#contact-form {
 
 .staticCarousel li {
   flex: 0 0 auto;
-  margin-right: 10px; /* Adjust the spacing between images */
+  margin-right: 20px;
 }
 
 .staticCarousel img {
