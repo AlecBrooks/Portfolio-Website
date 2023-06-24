@@ -18,17 +18,20 @@
 			<div id="particles-js" class="particles-js" ></div>
 			<header>
 				<nav class="mobile-container">
-					<ul id="NavButtons">
-						<li><button onclick="Pages('/src/pages/Intro.html'); Hamburger();">Intro</button></li>
-						<li><button onclick="Pages('/src/pages/Analysis.html'); Hamburger();">Analysis</button></li>
-						<li><button onclick="Pages('/src/pages/Design.html'); Hamburger();">Design</button></li>
-						<li><button onclick="Pages('/src/pages/Programming.html'); Hamburger();">Programming</button></li>
-						<li><button onclick="Pages('/src/pages/ContactMe.html'); Hamburger();">Contact me</button></li>
-					</ul>
-					<a href="javascript:void(0);" class="icon" onclick="Hamburger()">
+					<div class="topnav">
+					  <a href="#" class="active">Logo</a>
+					  <div id="NavButtons">
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Intro.html'); Hamburger();">Intro</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Analysis.html'); Hamburger();">Analysis</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Design.html'); Hamburger();">Design</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/Programming.html'); Hamburger();">Programming</a>
+						<a href="javascript:void(0);" onclick="Pages('/src/pages/ContactMe.html'); Hamburger();">Contact me</a>
+					  </div>
+					  <a href="javascript:void(0);" class="icon" onclick="Hamburger()">
 						<i class="fa fa-bars"></i>
-					</a>
-				</nav>
+					  </a>
+					</div>
+				  </nav>
 			</header>
 			<div id="MyContent">
 				<!--CONTENT EMBED HERE-->
