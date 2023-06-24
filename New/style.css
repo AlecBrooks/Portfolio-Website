@@ -418,8 +418,12 @@ form#contact-form {
 }
 
 .staticCarousel img {
-  width: 100px;
+  width: 20%;
   height: auto;
 }
+  
+  #staticCarousel img:hover {
+    transform:scale(1.1);
+  }
 
 }
