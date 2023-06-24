@@ -42,17 +42,17 @@ header {
     border-radius: 10px;
   }
   
-  .topnav {
+  .mobile-container .topnav {
     overflow: hidden;
     background-color: #333;
     position: relative;
   }
   
-  .topnav #NavButtons {
+  .mobile-container .topnav #NavButtons {
     display: none;
   }
   
-  .topnav button {
+  .mobile-container .topnav button {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -63,7 +63,7 @@ header {
     cursor: pointer;
   }
   
-  .topnav button.icon {
+  .mobile-container .topnav button.icon {
     background: black;
     display: block;
     position: absolute;
@@ -71,12 +71,12 @@ header {
     top: 0;
   }
   
-  .topnav button:hover {
+  .mobile-container .topnav button:hover {
     background-color: #ddd;
     color: black;
   }
   
-  .active {
+  .mobile-container .active {
     background-color: #04AA6D;
     color: white;
   }
