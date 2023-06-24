@@ -153,21 +153,6 @@ border-radius: 50%;
 box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
             inset 2px 2px 5px rgba(0,0,0,0.2);
 }
-.socialLinks li:nth-child(1) a {
-  color: #0077b5;
-}
-.socialLinks li:nth-child(2) a {
-  color: #800080;
-}
-.socialLinks li:nth-child(3) a{
-  color: #20BEFF;
-}
-.socialLinks li:nth-child(4) a {
-  color: #E8762D;
-}
-.socialLinks li:nth-child(5) a {
-  color: #333;
-}
 
 .carousel-control-next,
 .carousel-indicators,
