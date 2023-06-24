@@ -1,145 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 /* background */
 #particles-js canvas {
-    display: block;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-    transition: opacity .8s ease, transform 1.4s ease
-  }
-  
-  #particles-js {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -10;
-  }
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+}
 
 /*Nav Bar Style*/
 header {
-    height: 60px;
-    background-color: #F8F8F8;
-    border-bottom: 2px solid #8FC1E3;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
-  }
+  height: 60px;
+  background-color: #F8F8F8;
+  border-bottom: 2px solid #8FC1E3;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+}
 
-  .mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  .mobile-container .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  .mobile-container .topnav #NavButtons {
-    display: none;
-  }
-  
-  .mobile-container .topnav button {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .mobile-container .topnav button.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .mobile-container .topnav button:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .mobile-container .active {
-    background-color: #04AA6D;
-    color: white;
-  }
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
 
+.mobile-container .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
+.mobile-container #NavButtons {
+  display: none;
+}
 
+.mobile-container button {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
+.mobile-container button.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
+.mobile-container button:hover {
+  background-color: #ddd;
+  color: black;
+}
 
+.mobile-container .active {
+  background-color: #04AA6D;
+  color: white;
+}
 
+h1 {
+  border-bottom: #8FC1E3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3em;
+  color: #3D7190;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
+.post {
+  margin: 30px;
+  padding: 15px;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  h1 {
-    border-bottom: #8FC1E3;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.3em;
-    color: #3D7190;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .post {
-    margin: 30px;
-    padding: 15px;
-    background-color: #F8F8F8;
-    border-radius: 5px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    overflow:auto;
-  }
-  
-  /*Footer Style*/
+/*Footer Style*/
 footer {
-    background-color: #F8F8F8;
-    height: 100px;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-size: 14px;
-    color: #666666;
-    border-top: 2px solid #8FC1E3;
-    padding-top: 20px;
-    padding-bottom: 0px;
-  }
-
+  background-color: #F8F8F8;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  border-top: 2px solid #8FC1E3;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
