@@ -51,16 +51,18 @@
 					hljs.highlightAll();
 					console.log("hljs.highlightAll() executed.");
 				}
-				
 				function Hamburger() {
 					var x = document.getElementById("NavButtons");
+					var hamburgerIcon = document.querySelector(".icon");
+
 					if (x.style.display === "block") {
 						x.style.display = "none";
+						hamburgerIcon.classList.remove("active");
 					} else {
 						x.style.display = "block";
+						hamburgerIcon.classList.add("active");
 					}
-				}
-				
+					}
 				window.onload = function() {
 					Pages('/src/pages/Intro.html');
 				};
