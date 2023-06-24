@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="/src/images/favcon.svg">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/github.min.css">
+	<title></title>
+</head>
+	<body>
+		<div class="wrapper">
+			<div id="particles-js" class="particles-js" ></div>
+			<header>
+				<nav>
+					<ul id="NavButtons">
+						<li><button onclick="Pages('/src/pages/Intro.html')">Intro</button></li>
+						<li><button onclick="Pages('/src/pages/Analysis.html')">Analysis</button></li>
+						<li><button onclick="Pages('/src/pages/Design.html')">Design</button></li>
+						<li><button onclick="Pages('/src/pages/Programming.html')">Programming</button></li>
+						<li><button onclick="Pages('/src/pages/ContactMe.html')">Contact me</button></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="MyContent">
+				<!--CONTENT EMBED HERE-->
+			</div>
+			<footer>
+				Alec@brooksdev.org
+				powered by notepad.exe
+				<p>&copy; 2023 Alec Brooks. All rights reserved.</p>
+			</footer>
+			<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+			<script src="/src/js/Particles/conf.js"></script>
+			<script src="/src/js/pull.js"></script>
+			<script src="/src/js/send.js"></script>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+			<script>
+				function highlightContent() {
+					hljs.highlightAll();
+					console.log("hljs.highlightAll() executed.");
+				}
+				window.onload = function() {
+					Pages('/src/pages/Intro.html', highlightContent);
+				};
+			</script>
+		</div>
+	</body>
+</html>
