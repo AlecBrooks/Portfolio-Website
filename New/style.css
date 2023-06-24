@@ -43,7 +43,7 @@ header {
   display: none;
 }
 
-.NavButtons li {
+.NavButtons ul {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -51,18 +51,6 @@ header {
   display: block;
 }
 
-.NavButtons a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topNavButtonsnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 .active {
   background-color: #04AA6D;
