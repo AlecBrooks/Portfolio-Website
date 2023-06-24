@@ -99,6 +99,7 @@ footer {
 .img-me {
   width: 100%;
   border-radius: 50%;
+  padding: 10px;
 }
 
 .socialLinks
