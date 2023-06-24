@@ -94,4 +94,8 @@ footer {
   padding-bottom: 0px;
 }
 
+.img-me {
+  float: left; 
+  border-radius: 50%;
+}
 
