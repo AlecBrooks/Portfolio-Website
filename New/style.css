@@ -252,20 +252,16 @@ background-color: #6FAEDB;
   background-color: #E8762D;
 }
 
-@media only screen and (min-width:1000) {
+@media only screen and (min-width:500) {
 
   .wrapper {
     width: 100%;
-    display: none;
   }
 
   .mobile-container {
     display: none;
   }
 
-  .topnav {
-    display: none;
-  }
 }
 
 
