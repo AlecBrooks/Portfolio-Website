@@ -317,8 +317,10 @@ background-color: #6FAEDB;
     text-align: center;
   }
 
-  .post img {
+  .img-me {
     max-width: 20%;
+    border-radius: 50%;
+    padding: 10px;
     float: left;
   }
   
