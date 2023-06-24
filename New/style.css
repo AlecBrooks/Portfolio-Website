@@ -270,6 +270,38 @@ background-color: #6FAEDB;
   .desktop-container {
     display: contents;
   }
+
+  /*Nav Bar Style*/
+nav {
+  height: 30px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav button {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 5px;
+  color: #333333;
+  font-weight: bold;
+  transition: 0.8;
+  cursor: pointer;
+  width: 100%;
+  max-width: 290px;
+  box-sizing: border-box;
+  text-align: center;
+}
   
 }
 
