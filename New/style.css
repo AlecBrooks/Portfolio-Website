@@ -316,6 +316,11 @@ background-color: #6FAEDB;
     box-sizing: border-box;
     text-align: center;
   }
+
+  .post img {
+    max-width: 50%;
+    float: left;
+  }
   
 }
 
