@@ -53,11 +53,6 @@
   top: 0;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .topnav .active {
   background-color: #04AA6D;
   color: white;
