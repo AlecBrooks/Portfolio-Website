@@ -131,6 +131,7 @@ code.code-block {
   list-style: none;
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .socialLinks li {
