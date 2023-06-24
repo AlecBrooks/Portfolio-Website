@@ -62,6 +62,15 @@ nav {
     box-sizing: border-box;
     text-align: center;
   }
+
+  h1 {
+    border-bottom: #8FC1E3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #3D7190;
+    margin-bottom: 20px;
+    text-align: center;
+  }
   
   .post {
     margin: 0 auto;
