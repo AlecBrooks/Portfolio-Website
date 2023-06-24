@@ -293,9 +293,10 @@ background-color: #6FAEDB;
 
   nav li {
     margin-left: 20px;
+    
   }
 
-  nav button {
+  nav a {
     border: none;
     background: none;
     padding: 5px 10px;
