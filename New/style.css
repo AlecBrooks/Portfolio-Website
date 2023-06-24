@@ -44,10 +44,8 @@
   font-size: 17px;
   display: block;
   font-weight: bold;
-
   cursor: pointer;
-
-
+  font-family: 'Lato', sans-serif;
 }
 
 .topnav a.icon {
