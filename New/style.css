@@ -413,6 +413,7 @@ form#contact-form {
 
 .img-carousel {
   width: 20%;
+  justify-content: center;
 }
 
 }
