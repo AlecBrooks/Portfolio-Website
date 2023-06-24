@@ -6,7 +6,7 @@ function sendForm(event) {
   var message = document.getElementById('message').value;
 
   if (email === '' || subject === '' || message === '') {
-    showNotification('Error: Please fill in all fields.');
+    showNotification('Error: Please fill in all fields.', 'error');
     return;
   }
 
@@ -40,25 +40,30 @@ function sendForm(event) {
   })
     .then(response => {
       if (response.ok) {
-        // Success! The message has been sent to your Discord server.
-        showNotification('Notification sent successfully!');
+        showNotification('Notification sent successfully!', 'success');
         clearForm();
       } else {
-        // Error handling if the request fails
-        showNotification('Failed to send notification.');
+        showNotification('Failed to send notification.', 'error');
       }
     })
     .catch(error => {
-      // Error handling for network or other issues
-      showNotification('Failed to send notification.');
+      showNotification('Failed to send notification.', 'error');
     });
 }
 
-
-function showNotification(message) {
+function showNotification(message, status) {
   var notification = document.getElementById('notification');
   notification.textContent = message;
   notification.style.display = 'block';
+
+  notification.classList.remove('success', 'error');
+
+  if (status === 'success') {
+    notification.classList.add('success');
+  } else if (status === 'error') {
+    notification.classList.add('error');
+  }
+
   setTimeout(function() {
     notification.style.display = 'none';
   }, 3000);

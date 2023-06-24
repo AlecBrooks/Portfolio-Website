@@ -237,7 +237,7 @@ button[type="submit"]:hover {
 background-color: #6FAEDB;
 }
 
-#notification {
+.notification {
   display: none;
   background-color: #F2F2F2;
   color: #333333;
@@ -248,4 +248,12 @@ background-color: #6FAEDB;
   margin-top: 20px;
   text-align: center;
   max-width: 100%;
-  }
+}
+
+.notification.success {
+  background-color: blue;
+}
+
+.notification.error {
+  background-color: red;
+}
