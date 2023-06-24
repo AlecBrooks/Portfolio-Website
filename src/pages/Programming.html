@@ -25,7 +25,8 @@
                 <p>SurvChat takes security to a whole new level with its client-side message encryption. The encryption function in VBA ensures that your messages remain secure and indecipherable to prying eyes. Here's a glimpse of the encryption function:</p>
                 <p><a href="/src/images/demos/SurvChat_Demo.gif" target="_blank"><img src="/src/images/demos/SurvChat_Demo.gif" alt="Cube Runner Game Demo" style="float: left; margin-right: 10px; max-width: 100%; border: 2px solid black;"></a></p>
                 <pre>
-                    <code class="code-block">Function Encrypt(crypt_in As String)
+                    <code class="code-block">
+Function Encrypt(crypt_in As String)
 Dim c, f, i As Integer             
 For i = 1 To Len(crypt_in)
     c = Asc(Mid(crypt_in, i, 1))             
@@ -52,8 +53,10 @@ End Function
                 <h4>Example of an Encrypted Conversation:</h4>
                 <p>Here's a snippet of an encrypted conversation stored on the server:</p>
                 <pre>
-                    <code class="code-block">Hfre1@QRFX - 03:16 CZ >  Uryyb Jbeyq!
-Hfre2@QRFX - 03:16 CZ >  Url!</code>
+                    <code class="code-block">
+Hfre1@QRFX - 03:16 CZ >  Uryyb Jbeyq!
+Hfre2@QRFX - 03:16 CZ >  Url!
+                    </code>
             </pre>
                 <h3>Accessing the Project/Installation</h3>
                 <p>To get started with SurvChat, you can download the client and server from my GitHub repository: <a href="https://github.com/AlecBrooks/SurvTalk">SurvTalk on GitHub</a>. The installation process involves storing the server folder on a shared network drive and the client folder locally.</p>
