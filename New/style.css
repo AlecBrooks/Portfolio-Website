@@ -354,6 +354,7 @@ background-color: #6FAEDB;
 .socialLinks li {
 position: relative;
 list-style: none;
+color: #333333;
 }
 
 .socialLinks li a {
