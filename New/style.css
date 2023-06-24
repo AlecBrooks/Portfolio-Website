@@ -17,6 +17,10 @@
     -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
     transition: opacity .8s ease, transform 1.4s ease
   }
+  
+  #particles-js {
+    z-index: -10;
+  }
 
 header {
     background-color: #F8F8F8;
