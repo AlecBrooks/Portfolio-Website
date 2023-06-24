@@ -256,6 +256,7 @@ background-color: #6FAEDB;
 
   .wrapper {
     width: 100%;
+    display: none;
   }
 
   .mobile-container {
@@ -265,7 +266,6 @@ background-color: #6FAEDB;
   .topnav {
     display: none;
   }
-
 }
 
 
