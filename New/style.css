@@ -266,6 +266,20 @@ background-color: #6FAEDB;
   background-color: #E8762D;
 }
 
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .img-me {
+    width: 5%;
+    border-radius: 50%;
+    padding: 10px;
+    float: left;
+  }
+
+}
+
 @media only screen and (min-width: 1000px) {
 
   .wrapper {
