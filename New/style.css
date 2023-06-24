@@ -27,6 +27,11 @@
 }
 
 /*Nav Bar Style*/
+
+.desktop-container{
+  display: none;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #F8F8F8;
