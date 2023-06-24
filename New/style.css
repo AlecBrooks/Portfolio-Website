@@ -406,6 +406,10 @@ form#contact-form {
   justify-content: center;
 }
 
+#staticCarousel {
+  display: contents;
+}
+
 #staticCarousel img {
   position: relative;
   display: flex;
