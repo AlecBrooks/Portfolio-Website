@@ -249,10 +249,3 @@ transition: background-color 0.3s ease;
 button[type="submit"]:hover {
 background-color: #6FAEDB;
 }
-
-main {
-max-width: 1500px;
-margin: 0 auto;
-margin-top: 50px;
-margin-bottom: 50px;
-}
