@@ -14,3 +14,17 @@
     border-width: 2px;
     border-color: red;
   }
+
+  .Center{
+    width: 33%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+  }
+
+  .Right{
+    width: 33%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: greenyellow;
+  }
