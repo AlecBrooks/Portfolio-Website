@@ -107,8 +107,11 @@ footer {
 
 .latest-threads-container {
   background-color: #fff;
-  max-width: 900px;
   margin: 20px auto;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjust the width as desired */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
