@@ -22,10 +22,6 @@ header {
   margin-bottom: 20px;
 }
 
-.post-block h2 {
-  margin-bottom: 10px;
-}
-
 .post-block form label {
   display: block;
   font-weight: bold;
@@ -54,7 +50,7 @@ header {
 .post-block .input-container {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increase the margin-bottom value to add space */
 }
 
 .post-block .input-title {
