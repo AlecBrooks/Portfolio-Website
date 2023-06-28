@@ -104,6 +104,11 @@ footer {
   margin: 20px 0;
 }
 
+.toggle-link a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .collapsed {
   display: none;
 }
