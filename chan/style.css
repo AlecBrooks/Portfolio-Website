@@ -25,9 +25,9 @@ header h1 {
 main {
   max-width: 900px;
   margin: 20px auto;
-  padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .toggle-link {
@@ -42,8 +42,8 @@ main {
 
 .create-thread {
   margin-bottom: 20px;
-  padding: 20px;
   background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .create-thread form {
@@ -112,4 +112,5 @@ footer {
 .latest-threads-container {
   background-color: #f2f2f2;
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
