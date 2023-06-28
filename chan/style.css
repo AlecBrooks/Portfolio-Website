@@ -8,137 +8,51 @@
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.5;
-  background-color: #f5f5f5;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
+  background-color: #333;
+  padding: 20px;
 }
 
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
+header h1 {
   color: #fff;
-  background-color: #006699;
-  padding: 10px 20px;
-  border-radius: 4px;
-}
-
-nav ul li a:hover {
-  background-color: #004466;
 }
 
 main {
-  margin-bottom: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section {
+  max-width: 900px;
+  margin: 20px auto;
   padding: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-section.create-thread {
-  width: 25%;
-  margin: 0 auto;
-}
-
-section.create-thread form {
-  display: inline-block;
-  text-align: left;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-form input[type="text"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form input[type="submit"] {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #f5f5f5;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-link {
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .toggle-link a {
-  font-size: 18px;
-  font-weight: bold;
   text-decoration: none;
 }
 
-.collapsed {
-  display: none;
+.create-thread {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
-/* ... previous CSS styles ... */
-
-.form-row {
-  margin-bottom: 10px;
-}
-
-.form-row label {
-  display: inline-block;
-  width: 120px;
-  font-weight: bold;
-}
-
-.form-row input,
-.form-row textarea {
-  width: 300px;
-}
-
-.collapsed {
-  display: none;
+.create-thread form {
+  margin-bottom: 20px;
 }
 
 .form-row {
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .form-title {
@@ -150,7 +64,38 @@ footer {
   color: #333;
 }
 
-.collapsed {
-  display: none;
+.create-thread input[type="text"],
+.create-thread textarea,
+.create-thread input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
 }
 
+.create-thread textarea {
+  height: 100px;
+}
+
+.create-thread input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.create-thread input[type="submit"]:hover {
+  background-color: #555;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
