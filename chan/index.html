@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Image Board</title>
+  <title>jChan</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
-    <h1>My Image Board</h1>
+    <h1>jChan</h1>
   </header>
 
+  <div class="post-block">
+    <h2>Create a New Post</h2>
+    <form>
+      <input type="text" name="post-title" placeholder="Title" required>
+      <input type="text" name="post-author" placeholder="Author" required>
+      <textarea name="post-content" placeholder="Content" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
   <div class="content">
-    <!-- Post block goes here -->
+    <!-- Posts go here -->
     <div class="post">
-      <div class="post-header">
-        <span class="post-title">Post Title</span>
-        <span class="post-author">by <strong>Author</strong></span>
-      </div>
-      <div class="post-image">
-        <img src="image.jpg" alt="Image">
-      </div>
-      <div class="post-body">
-        <p>This is the content of the post.</p>
-      </div>
+      <!-- Post content -->
     </div>
-    <!-- End of post block -->
+    <!-- End of posts -->
   </div>
 
   <footer>
-    <p>&copy; 2023 My Image Board</p>
+    <p>&copy; 2023 jChan</p>
   </footer>
 </body>
 </html>
