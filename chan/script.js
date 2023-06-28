@@ -1,8 +1,4 @@
-
-const toggleIcon = document.querySelector('.toggle-icon');
-const createThreadSection = document.querySelector('.create-thread form');
-
-toggleIcon.addEventListener('click', () => {
+function toggleForm() {
+  const createThreadSection = document.querySelector('.create-thread');
   createThreadSection.classList.toggle('collapsed');
-  toggleIcon.textContent = createThreadSection.classList.contains('collapsed') ? '+' : '-';
-});
+}

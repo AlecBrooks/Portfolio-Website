@@ -10,8 +10,9 @@
   </header>
   
   <main>
-    <section class="create-thread">
-      <h2>Create Thread <span class="toggle-icon">+</span></h2>
+    <button class="toggle-button" onclick="toggleForm()">[Start a New Thread]</button>
+  
+    <section class="create-thread collapsed">
       <form enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Name (default: Anonymous)" value="Anonymous">
         <input type="text" name="subject" placeholder="Subject">
