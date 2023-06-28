@@ -37,6 +37,7 @@ main {
 
 .toggle-link a {
   text-decoration: none;
+  color: #000;
 }
 
 .create-thread {
@@ -60,60 +61,3 @@ main {
   padding: 8px;
   margin-right: 10px;
   font-weight: bold;
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-.create-thread input[type="text"],
-.create-thread textarea,
-.create-thread input[type="file"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 0;
-}
-
-.create-thread textarea {
-  height: 100px;
-}
-
-.create-thread input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.create-thread input[type="submit"]:hover {
-  background-color: #555;
-}
-
-.collapsed {
-  display: none;
-}
-
-section h2 {
-  margin-bottom: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-.toggle-link a {
-  text-decoration: none;
-  color: #000;
-}
-
-.create-thread-container {
-  margin-bottom: 20px;
-}
-
-.latest-threads-container {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
