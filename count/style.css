@@ -9,6 +9,7 @@
   }
 
   .Left{
+    float: left;
     width: 33%;
     border-style: solid;
     border-width: 2px;
@@ -16,6 +17,7 @@
   }
 
   .Center{
+    float: left;
     width: 33%;
     border-style: solid;
     border-width: 2px;
@@ -23,6 +25,7 @@
   }
 
   .Right{
+    float: left;
     width: 33%;
     border-style: solid;
     border-width: 2px;
