@@ -1,66 +1,50 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default styles for consistency */
+body, h1, p, img {
   margin: 0;
   padding: 0;
 }
 
+/* Provide some basic styling */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-#post-section {
+  background-color: #f2f2f2;
   padding: 20px;
+  text-align: center;
 }
 
-#post-form {
-  background-color: #f0f0f0;
-  padding: 20px;
+.content {
+  margin: 20px;
 }
 
-#post-form h2 {
-  margin: 0 0 10px;
-}
-
-form div {
-  margin-bottom: 10px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-form input[type="text"],
-form textarea {
-  width: 100%;
-  padding: 5px;
-}
-
-#thread-list {
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-
-#thread-list h2 {
-  margin: 0 0 10px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #fff;
+.post {
   border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.post-header {
+  margin-bottom: 10px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-author {
+  font-size: 14px;
+}
+
+.post-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-body {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
 }

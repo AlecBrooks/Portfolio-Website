@@ -2,41 +2,32 @@
 <html>
 <head>
   <title>My Image Board</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
     <h1>My Image Board</h1>
   </header>
 
-  <section id="post-section">
-    <div id="post-form">
-      <h2>Create a New Thread</h2>
-      <form>
-        <div>
-          <label for="thread-title">Thread Title:</label>
-          <input type="text" id="thread-title" name="thread-title" required>
-        </div>
-        <div>
-          <label for="thread-content">Thread Content:</label>
-          <textarea id="thread-content" name="thread-content" required></textarea>
-        </div>
-        <div>
-          <label for="image-upload">Image Upload:</label>
-          <input type="file" id="image-upload" name="image-upload">
-        </div>
-        <button type="submit">Create Thread</button>
-      </form>
+  <div class="content">
+    <!-- Post block goes here -->
+    <div class="post">
+      <div class="post-header">
+        <span class="post-title">Post Title</span>
+        <span class="post-author">by <strong>Author</strong></span>
+      </div>
+      <div class="post-image">
+        <img src="image.jpg" alt="Image">
+      </div>
+      <div class="post-body">
+        <p>This is the content of the post.</p>
+      </div>
     </div>
-  </section>
+    <!-- End of post block -->
+  </div>
 
-  <section id="thread-list">
-    <h2>Threads</h2>
-    <ul>
-      <!-- Thread items will be dynamically generated here -->
-    </ul>
-  </section>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2023 My Image Board</p>
+  </footer>
 </body>
 </html>
