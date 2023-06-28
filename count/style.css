@@ -11,6 +11,7 @@
   }
 
   .Left{
+    flex: 1;
     float: left;
     width: 33%;
     border-style: solid;
