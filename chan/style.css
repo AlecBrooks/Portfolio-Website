@@ -99,9 +99,9 @@ footer {
   background-color: #f5f5f5;
 }
 
-.toggle-button {
-  display: block;
-  margin: 20px auto;
+.toggle-link {
+  text-align: center;
+  margin: 20px 0;
 }
 
 .collapsed {
