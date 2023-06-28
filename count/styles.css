@@ -18,11 +18,9 @@
   .box {
     flex: 1;
     height: 100%;
-    background-color: lightblue;
   }
   
   .center {
     flex: 3;
-    background-color: red;
   }
 
