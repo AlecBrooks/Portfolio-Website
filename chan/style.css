@@ -89,6 +89,10 @@ main {
   background-color: #555;
 }
 
+.collapsed {
+  display: none;
+}
+
 section h2 {
   margin-bottom: 10px;
 }
