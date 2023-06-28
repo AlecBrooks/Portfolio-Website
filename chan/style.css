@@ -105,9 +105,9 @@ footer {
 }
 
 .toggle-link a {
-  display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .collapsed {
