@@ -108,3 +108,12 @@ footer {
   text-decoration: none;
   color: #000;
 }
+
+.create-thread-container {
+  margin-bottom: 20px;
+}
+
+.latest-threads-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}

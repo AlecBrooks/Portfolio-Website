@@ -11,36 +11,40 @@
   </header>
   
   <main>
-    <div class="toggle-link">
-      <a href="#" onclick="toggleForm()"><h2><strong>[Start a New Thread]</strong></h2></a>
-    </div>
-  
-    <section class="create-thread collapsed">
-      <form enctype="multipart/form-data">
-        <div class="form-row">
-          <div class="form-title">Name:</div>
-          <input type="text" id="name" name="name" placeholder="Anonymous">
-        </div>
-        <div class="form-row">
-          <div class="form-title">Subject:</div>
-          <input type="text" id="subject" name="subject" placeholder="Enter subject">
-        </div>
-        <div class="form-row">
-          <div class="form-title">Comment:</div>
-          <textarea id="comment" name="comment" placeholder="Enter comment" required></textarea>
-        </div>
-        <div class="form-row">
-          <div class="form-title">File:</div>
-          <input type="file" id="image" name="image" accept="image/*">
-        </div>
-        <input type="submit" value="Create Thread">
-      </form>
-    </section>
+    <div class="create-thread-container">
+      <div class="toggle-link">
+        <a href="#" onclick="toggleForm()"><h2><strong>[Start a New Thread]</strong></h2></a>
+      </div>
     
-    <section>
-      <h2>Latest Threads</h2>
-      <!-- Thread list goes here -->
-    </section>
+      <section class="create-thread collapsed">
+        <form enctype="multipart/form-data">
+          <div class="form-row">
+            <div class="form-title">Name:</div>
+            <input type="text" id="name" name="name" placeholder="Anonymous">
+          </div>
+          <div class="form-row">
+            <div class="form-title">Subject:</div>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject">
+          </div>
+          <div class="form-row">
+            <div class="form-title">Comment:</div>
+            <textarea id="comment" name="comment" placeholder="Enter comment" required></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-title">File:</div>
+            <input type="file" id="image" name="image" accept="image/*">
+          </div>
+          <input type="submit" value="Create Thread">
+        </form>
+      </section>
+    </div>
+    
+    <div class="latest-threads-container">
+      <section class="latest-threads">
+        <h2>Latest Threads</h2>
+        <!-- Thread list goes here -->
+      </section>
+    </div>
   </main>
   
   <footer>
