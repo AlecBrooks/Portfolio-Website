@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jChan</title>
+  <title>jChat - Imageboard</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>jChan</h1>
+    <h1>jChat Imageboard</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Boards</a></li>
+        <li><a href="#">Create Thread</a></li>
+      </ul>
+    </nav>
   </header>
-  
+
   <main>
-    <div class="create-thread-container">
-      <div class="toggle-link">
-        <a href="#" onclick="toggleForm()"><h2><strong>[Start a New Thread]</strong></h2></a>
-      </div>
-    
-      <section class="create-thread collapsed">
-        <form enctype="multipart/form-data">
-          <div class="form-row">
-            <label for="name" class="form-title">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Anonymous">
-          </div>
-          <div class="form-row">
-            <label for="subject" class="form-title">Subject:</label>
-            <input type="text" id="subject" name="subject" placeholder="Enter subject">
-          </div>
-          <div class="form-row">
-            <label for="comment" class="form-title">Comment:</label>
-            <textarea id="comment" name="comment" placeholder="Enter comment" required></textarea>
-          </div>
-          <div class="form-row">
-            <label for="image" class="form-title">File:</label>
-            <input type="file" id="image" name="image" accept="image/*">
-          </div>
-          <input type="submit" value="Create Thread">
-        </form>
-      </section>
-    </div>
-    
-    <div class="latest-threads-container">
-      <section class="latest-threads">
-        <div class="latest-threads-content">
-          <h2>Latest Threads</h2>
-          <!-- Thread list goes here -->
+    <div class="thread">
+      <div class="post">
+        <div class="post-header">
+          <span class="post-id">12345</span>
+          <span class="post-username">Anonymous</span>
+          <span class="post-timestamp">2023-06-28 12:34:56</span>
         </div>
-      </section>
+        <div class="post-content">
+          <p>This is a sample post.</p>
+          <!-- Add image, video, or any other content here -->
+        </div>
+      </div>
+      <!-- Add more posts within the thread -->
     </div>
+    <!-- Add more threads here -->
   </main>
-  
+
   <footer>
-    <p>&copy; 2023 jChan</p>
+    <p>&copy; 2023 jChat Imageboard. All rights reserved.</p>
   </footer>
 </body>
 </html>
