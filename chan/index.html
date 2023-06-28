@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Imageboard</title>
+  <title>jChan</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
-    <h1>My Imageboard</h1>
+    <h1>jChan</h1>
   </header>
   
   <main>
     <div class="toggle-link">
-      <a href="#" onclick="toggleForm()">[Start a New Thread]</a>
+      <a href="#" onclick="toggleForm()"><h2><strong>[Start a New Thread]</strong></h2></a>
     </div>
   
     <section class="create-thread collapsed">
       <form enctype="multipart/form-data">
-        <input type="text" name="name" placeholder="Name (default: Anonymous)" value="Anonymous">
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="comment" placeholder="Comment" required></textarea>
-        <input type="file" name="image" accept="image/*">
+        <div class="form-row">
+          <label for="name">Name (default: Anonymous):</label>
+          <input type="text" id="name" name="name" placeholder="Anonymous">
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter subject">
+        </div>
+        <div class="form-row">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" placeholder="Enter comment" required></textarea>
+        </div>
+        <div class="form-row">
+          <label for="image">File:</label>
+          <input type="file" id="image" name="image" accept="image/*">
+        </div>
         <input type="submit" value="Create Thread">
       </form>
     </section>
@@ -31,7 +43,7 @@
   </main>
   
   <footer>
-    <p>&copy; 2023 My Imageboard</p>
+    <p>&copy; 2023 jChan</p>
   </footer>
   
   <script src="script.js"></script>
