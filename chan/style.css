@@ -25,7 +25,6 @@ header h1 {
 main {
   max-width: 900px;
   margin: 20px auto;
-  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
@@ -107,6 +106,7 @@ footer {
 
 .create-thread-container {
   margin-bottom: 20px;
+  background-color: #fff;
 }
 
 .latest-threads-container {
