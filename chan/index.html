@@ -26,8 +26,9 @@
     <section>
       <h2>Create Thread</h2>
       <form enctype="multipart/form-data">
-        <input type="text" placeholder="Thread Title" required>
-        <textarea placeholder="Thread Content" required></textarea>
+        <input type="text" name="name" placeholder="Name (default: Anonymous)" value="Anonymous">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="comment" placeholder="Comment" required></textarea>
         <input type="file" name="image" accept="image/*">
         <input type="submit" value="Create Thread">
       </form>
