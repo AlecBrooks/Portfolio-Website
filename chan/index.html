@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jChat - Imageboard</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>My Image Board</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  <header>
+    <h1>My Image Board</h1>
+  </header>
 
+  <section id="post-section">
+    <div id="post-form">
+      <h2>Create a New Thread</h2>
+      <form>
+        <div>
+          <label for="thread-title">Thread Title:</label>
+          <input type="text" id="thread-title" name="thread-title" required>
+        </div>
+        <div>
+          <label for="thread-content">Thread Content:</label>
+          <textarea id="thread-content" name="thread-content" required></textarea>
+        </div>
+        <div>
+          <label for="image-upload">Image Upload:</label>
+          <input type="file" id="image-upload" name="image-upload">
+        </div>
+        <button type="submit">Create Thread</button>
+      </form>
+    </div>
+  </section>
 
+  <section id="thread-list">
+    <h2>Threads</h2>
+    <ul>
+      <!-- Thread items will be dynamically generated here -->
+    </ul>
+  </section>
 
-
-
-  <tbody>
-    <tr data-type="Name">
-        <td>Name</td>
-        <td>
-            <input name="name" type="text" tabindex="1" placeholder="Anonymous">
-        </td>
-    </tr>
-    <tr data-type="Subject">
-        <td>Subject</td>
-        <td>
-            <input name="sub" type="text" tabindex="3">
-            <input type="submit" value="Post" tabindex="6">
-        </td>
-    </tr>
-    <tr data-type="Comment">
-        <td>Comment</td>
-        <td>
-            <textarea name="com" cols="48" rows="4" wrap="soft" tabindex="4"></textarea>
-        </td>
-    </tr>
-    <tr data-type="File">
-        <td>File</td>
-        <td>
-            <input id="postFile" name="upfile" type="file" tabindex="7">
-            <span class="desktop">
-                [
-                <label>
-                    <input type="checkbox" name="spoiler" value="on" tabindex="8">Spoiler?
-                </label>
-                ]
-            </span>
-    </tr>
-    
-</tbody>
-
-
-
-
-
-
+  <script src="script.js"></script>
 </body>
 </html>
