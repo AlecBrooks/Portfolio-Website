@@ -58,6 +58,7 @@ header {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   padding: 5px;
+  margin-right: 10px; /* Add margin-right to create space between title and input */
 }
 
 .content {
