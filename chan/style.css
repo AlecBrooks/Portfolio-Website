@@ -97,10 +97,18 @@ footer {
   color: #fff;
 }
 
-.container {
+.create-thread-container {
+  margin-bottom: 20px;
   background-color: #fff;
   max-width: 900px;
   margin: 20px auto;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
+}
+
+.latest-threads-container {
+  background-color: #fff;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
