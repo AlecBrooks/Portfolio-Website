@@ -51,6 +51,12 @@ header {
   padding: 0;
 }
 
+.post-block .input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .post-block .input-title {
   display: inline-block;
   background-color: #f2f2f2;

@@ -12,21 +12,30 @@
   <div class="post-block">
     <h2>Create a New Post</h2>
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Anonymous">
+      <div class="input-container">
+        <span class="input-title">Name:</span>
+        <input type="text" id="name" name="name" placeholder="Anonymous">
+      </div>
   
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" placeholder="">
+      <div class="input-container">
+        <span class="input-title">Subject:</span>
+        <input type="text" id="subject" name="subject" placeholder="">
+      </div>
   
-      <label for="comment">Comment:</label>
-      <textarea id="comment" name="comment" placeholder="Enter your comment"></textarea>
+      <div class="input-container">
+        <span class="input-title">Comment:</span>
+        <textarea id="comment" name="comment" placeholder="Enter your comment"></textarea>
+      </div>
   
-      <label for="file">File:</label>
-      <input type="file" id="file" name="file">
+      <div class="input-container">
+        <span class="input-title">File:</span>
+        <input type="file" id="file" name="file">
+      </div>
   
       <input type="submit" value="Submit">
     </form>
   </div>
+  
 
   <div class="content">
     <!-- Posts go here -->
