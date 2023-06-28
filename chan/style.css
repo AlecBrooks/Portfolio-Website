@@ -98,3 +98,13 @@ footer {
   padding: 20px 0;
   background-color: #f5f5f5;
 }
+
+.toggle-icon {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.collapsed {
+  display: none;
+}

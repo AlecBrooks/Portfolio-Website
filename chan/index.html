@@ -9,17 +9,9 @@
     <h1>My Imageboard</h1>
   </header>
   
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Boards</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
-  
   <main>
     <section class="create-thread">
-      <h2>Create Thread</h2>
+      <h2>Create Thread <span class="toggle-icon">+</span></h2>
       <form enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Name (default: Anonymous)" value="Anonymous">
         <input type="text" name="subject" placeholder="Subject">
@@ -38,5 +30,7 @@
   <footer>
     <p>&copy; 2023 My Imageboard</p>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
