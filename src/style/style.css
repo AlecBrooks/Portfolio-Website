@@ -399,6 +399,10 @@ transition: 0.5s;
   color: #333;
 }
 
+.socialLinks li:nth-child(6) a:hover {
+  color: #0077b5;
+}
+
 form#contact-form {
   max-width: 30%;
 
