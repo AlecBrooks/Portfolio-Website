@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/aleccb540
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://abrooks.dev
+  * I am aleccb540 (https://keybase.io/aleccb540) on keybase.
+  * I have a public key ASCXTaBI8iLK7-7pdTLWAA97KAdJ4WcfttHg_8zoQKaFkQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120974da048f222caefeee97532d6000f7b280749e1671fb6d1e0ffcce840a685910a",
+      "host": "keybase.io",
+      "kid": "0120974da048f222caefeee97532d6000f7b280749e1671fb6d1e0ffcce840a685910a",
+      "uid": "7b074e22cf1a4439e994407208bc3419",
+      "username": "aleccb540"
+    },
+    "merkle_root": {
+      "ctime": 1691564789,
+      "hash": "4b6143c6a2e045f4832338c9db45e8742ffddd38808a665e4c236ecd3b0cb37886469255694414a3eed9a411d56bc52f84d3786b1ca2f2c6657800b46d7dbf23",
+      "hash_meta": "2ba71a9bf38b3cea12a25eebc3573e6c27ade2358d7934bb61661c0e63b42073",
+      "seqno": 24787197
+    },
+    "service": {
+      "entropy": "Ex9JCV+LolAg0LzkXZTtk9sl",
+      "hostname": "abrooks.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.2"
+  },
+  "ctime": 1691564854,
+  "expire_in": 504576000,
+  "prev": "a0a56530f234d380d18ac4605c18a04a7b6a8366e0c5f7a38f5e37f70908ce9e",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgl02gSPIiyu/u6XUy1gAPeygHSeFnH7bR4P/M6ECmhZEKp3BheWxvYWTESpcCB8QgoKVlMPI004DRisRgXBigSntqg2bgxfejj1439wkIzp7EIGzOlXSJVkl9R0cEAWYUa28JHtAwc5/fuCDX/6nPeoE+AgHCo3NpZ8RAjoHL5g0dcmDISOGW9jwoa5/OmPJmsioZpYBtmoiQiE/+PS9smjybB5OIQwbax5pO6P4vZVYLAYLz+pZYVU0cCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIE2cyMe9w6m43p/qJFICefw66goC102KYC02LmsMG8V8o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aleccb540
+
+==================================================================
