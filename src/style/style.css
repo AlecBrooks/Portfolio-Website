@@ -116,15 +116,12 @@ code.code-block {
 
 /*Intro Page*/
 .img-me {
-  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-radius: 50%;
-  float: left;
-  border-color: #8FC1E3;
-  border-width: 2px;
-  border-style: solid;
-  box-sizing: border-box;
-  margin: 20;
-  padding: 0;
+  padding: 10px;
 }
 
 .socialLinks
@@ -329,8 +326,8 @@ background-color: #6FAEDB;
     border-width: 2px;
     border-style: solid;
     box-sizing: border-box;
-    margin: 20;
-    padding: 0;
+    margin: 20px;
+    padding: 0px;
 }
   
   .socialLinks
