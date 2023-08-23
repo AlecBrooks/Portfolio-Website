@@ -325,6 +325,7 @@ background-color: #6FAEDB;
     float: left;
     border-color: #8FC1E3;
     border-width: 2px;
+    border-style: solid; 
   }
   
   .socialLinks
