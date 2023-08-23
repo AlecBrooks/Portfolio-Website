@@ -86,13 +86,7 @@ body {
   background-color: #F8F8F8;
   border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Ensure that the iframe doesn't overflow */
-  height: auto; /* Let the container adjust its height based on content */
-}
-
-.post iframe {
-  width: 100%; /* Make the iframe take up the entire width of the container */
-  border: none; /* Remove the iframe border */
+  overflow: auto;
 }
 
 .post img {
@@ -447,5 +441,6 @@ form#contact-form {
     transform:scale(1.1);
     transition: 0.5s;
   }
+
 
 }
