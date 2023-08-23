@@ -325,9 +325,9 @@ background-color: #6FAEDB;
     border-color: #8FC1E3;
     border-width: 2px;
     border-style: solid;
-    box-sizing: border-box; /* Add this line */
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove padding */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10;
 }
   
   .socialLinks
