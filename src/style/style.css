@@ -323,6 +323,8 @@ background-color: #6FAEDB;
     border-radius: 50%;
     padding: 20px;
     float: left;
+    border-color: #8FC1E3;
+    border-width: 2px;
   }
   
   .socialLinks
