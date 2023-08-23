@@ -91,6 +91,7 @@ body {
 }
 
 .post iframe {
+  height: 100%; /* Make the iframe take up the entire width of the container */
   width: 100%; /* Make the iframe take up the entire width of the container */
   border: none; /* Remove the iframe border */
 }
