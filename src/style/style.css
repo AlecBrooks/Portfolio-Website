@@ -321,7 +321,7 @@ background-color: #6FAEDB;
   .img-me {
     width: 15%;
     border-radius: 50%;
-    margin: 20px;
+    padding: 20px;
     float: left;
     border-color: #8FC1E3;
     border-width: 2px;
